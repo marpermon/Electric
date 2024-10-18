@@ -1,5 +1,17 @@
 # header information:
 HIE0311-B95916-B63464-B94031-II2022|9.07
 
+# Views:
+Vlayout|lay
+
 # Technologies:
 Tmocmos|mocmosNumberOfMetalLayers()I3
+
+# Cell NAND2_10_10_B95916;1{lay}
+CNAND2_10_10_B95916;1{lay}||mocmos|1729282832547|1729283546494|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NN-Transistor|nmos@0||-18|-33|||||SIM_spice_model(D5G1;)SNMOS
+NN-Transistor|nmos@1||20|-33|||||SIM_spice_model(D5G1;)SNMOS
+NP-Transistor|pmos@0||-24|41|||||SIM_spice_model(D5G1;)SPMOS
+NP-Transistor|pmos@1||21|39|||||SIM_spice_model(D5G1;)SPMOS
+X
