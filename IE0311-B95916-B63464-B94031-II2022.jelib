@@ -2,11 +2,32 @@
 HIE0311-B95916-B63464-B94031-II2022|9.07
 
 # Views:
+Vicon|ic
 Vlayout|lay
 Vschematic|sch
 
 # Technologies:
 Tmocmos|mocmosNumberOfMetalLayers()I3
+
+# Cell NAND2_10_10_B95916;1{ic}
+CNAND2_10_10_B95916;1{ic}||artwork|1729573033784|1729578748430|E
+NCircle|NAND2_10_10_B95916|D5G1;X-4;Y-1;|-1|1|6|6|RRR||ART_degrees()F[0.0,3.1415927]
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Polygon|art@2||-3.5|1|5|6|||trace()V[2.5/3,-2.5/3,-2.5/-3,2.5/-3]
+NThick-Circle|art@4||3|1|2|2||
+Nschematic:Bus_Pin|pin@0||-8|2||||
+Nschematic:Wire_Pin|pin@1||-6|2||||
+Nschematic:Bus_Pin|pin@2||-8|0||||
+Nschematic:Wire_Pin|pin@3||-6|0||||
+Nschematic:Bus_Pin|pin@4||6|1||||
+Nschematic:Wire_Pin|pin@5||4|1||||
+Aschematic:wire|net@0|||0|pin@1||-6|2|pin@0||-8|2
+Aschematic:wire|net@1|||0|pin@3||-6|0|pin@2||-8|0
+Aschematic:wire|net@2|||1800|pin@5||4|1|pin@4||6|1
+EA_B95916||D5G2;X-5;|pin@0||I
+EB_B95916||D5G2;X-5;|pin@2||I
+EY_B95916||D5G2;X4;|pin@4||O
+X
 
 # Cell NAND2_10_10_B95916;1{lay}
 CNAND2_10_10_B95916;1{lay}||mocmos|1729282832547|1729373840640||DRC_last_good_drc_area_date()G1729373858343|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1729373858343
@@ -105,7 +126,8 @@ Evdd||D5G2.5;X-8.75;Y-0.5;|pin@2||P
 X
 
 # Cell NAND2_10_10_B95916;1{sch}
-CNAND2_10_10_B95916;1{sch}||schematic|1729552727739|1729558285738|
+CNAND2_10_10_B95916;1{sch}||schematic|1729552727739|1729573033823|
+INAND2_10_10_B95916;1{ic}|NAND2_10@0||14|17|||D5G4;
 NOff-Page|Y_B95916|D5G1;X-3.5;|5.5|-0.5||||
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||-34|5||||
@@ -146,6 +168,26 @@ Awire|net@16|||900|nmos@0|s|-4|-10|nmos@1|d|-4|-14.5
 EA_B95916||D5G2;|conn@0|a|I
 EB_B95916||D5G2;|conn@1|a|I
 EY_B95916||D5G2;X1.5;|Y_B95916|y|O
+X
+
+# Cell NAND2_20_5_B63464;1{ic}
+CNAND2_20_5_B63464;1{ic}||artwork|1729576225927|1729578782069|E
+NCircle|NAND2_20_5_B63464|D5G1;X-4;Y-1;|-1|1|6|6|RRR||ART_degrees()F[0.0,3.1415927]
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Polygon|art@2||-3.5|1|5|6|||trace()V[2.5/3,-2.5/3,-2.5/-3,2.5/-3]
+NThick-Circle|art@3||3|1|2|2||
+Nschematic:Bus_Pin|pin@0||-8|2||||
+Nschematic:Wire_Pin|pin@1||-6|2||||
+Nschematic:Bus_Pin|pin@2||-8|-1||||
+Nschematic:Wire_Pin|pin@3||-6|-1||||
+Nschematic:Bus_Pin|pin@4||6|1||||
+Nschematic:Wire_Pin|pin@5||4|1||||
+Aschematic:wire|net@0|||0|pin@1||-6|2|pin@0||-8|2
+Aschematic:wire|net@1|||0|pin@3||-6|-1|pin@2||-8|-1
+Aschematic:wire|net@2|||1800|pin@5||4|1|pin@4||6|1
+EA_B63464||D5G2;X-5;|pin@0||I
+EB_B63464||D5G2;X-5;|pin@2||I
+EY_B63464||D5G2;X4;|pin@4||O
 X
 
 # Cell NAND2_20_5_B63464;1{lay}
@@ -251,7 +293,8 @@ Evdd||D5G2.5;X-8.75;Y-0.5;|pin@2||P
 X
 
 # Cell NAND2_20_5_B63464;1{sch}
-CNAND2_20_5_B63464;1{sch}||schematic|1729554694150|1729558324421|
+CNAND2_20_5_B63464;1{sch}||schematic|1729554694150|1729576225934|
+INAND2_20_5_B63464;1{ic}|NAND2_20@0||17|30|||D5G4;
 NOff-Page|Y_B63464|D5G1;X-5;|6.5|5.5||||
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@1||-36.5|12||||
@@ -294,6 +337,26 @@ Awire|net@17|||2700|pin@4||-4|5.5|pin@5||-4|13
 EA_B63464||D5G2;|conn@1|a|I
 EB_B63464||D5G2;|conn@3|a|I
 EY_B63464||D5G2;|Y_B63464|y|O
+X
+
+# Cell NOR2_10_10_B63464;1{ic}
+CNOR2_10_10_B63464;1{ic}||artwork|1729576805594|1729578802173|E
+NCircle|NOR2_10_10_B63464|D5G1;X-4;Y3;|-5|0|6|12|RRR||ART_degrees()F[0.0,3.1415927]
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NThick-Circle|art@5||1.5|0|1|1||
+NThick-Circle|art@6||-5|0|6|6|RRR||ART_degrees()F[0.0,3.1415927]
+Nschematic:Bus_Pin|pin@0||-4|1||||
+Nschematic:Wire_Pin|pin@1||-2.2|1||||
+Nschematic:Bus_Pin|pin@2||-4|-1||||
+Nschematic:Wire_Pin|pin@3||-2.2|-1||||
+Nschematic:Bus_Pin|pin@4||4|0||||
+Nschematic:Wire_Pin|pin@5||2|0||||
+Aschematic:wire|net@0|||0|pin@1||-2.2|1|pin@0||-4|1
+Aschematic:wire|net@1|||0|pin@3||-2.2|-1|pin@2||-4|-1
+Aschematic:wire|net@2|||1800|pin@5||2|0|pin@4||4|0
+EA_B63464||D5G2;X-5;|pin@0||I
+EB_B63464||D5G2;X-5;|pin@2||I
+EY_B63464||D5G2;X4;|pin@4||O
 X
 
 # Cell NOR2_10_10_B63464;1{lay}
@@ -405,7 +468,8 @@ Evdd||D5G2.5;X-8.75;Y-0.5;|pin@2||P
 X
 
 # Cell NOR2_10_10_B63464;1{sch}
-CNOR2_10_10_B63464;1{sch}||schematic|1729556168981|1729556535532|
+CNOR2_10_10_B63464;1{sch}||schematic|1729556168981|1729576805600|
+INOR2_10_10_B63464;1{ic}|NOR2_10_@0||8|29|||D5G4;
 NOff-Page|Y_B63464|D5G1;X-5;|-2.5|-3||||
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@1||-42.5|17||||
@@ -444,6 +508,26 @@ Awire|net@11|||2700|pin@2||-12.5|-9.5|pin@1||-12.5|-3
 EA_B63464||D5G2;|conn@1|a|I
 EB_B63464||D5G2;X-5;|conn@2|y|I
 EY_B63464||D5G2;|Y_B63464|y|O
+X
+
+# Cell NOR2_20_5_B95916;1{ic}
+CNOR2_20_5_B95916;1{ic}||artwork|1729578234201|1729578813588|E
+NCircle|NOR2_20_5_B95916|D5G1;X-4;Y3;|-4|0|6|12|RRR||ART_degrees()F[0.0,3.1415927]
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NThick-Circle|art@2||2.5|0|1|1||
+NThick-Circle|art@3||-4|0|6|6|RRR||ART_degrees()F[0.0,3.1415927]
+Nschematic:Bus_Pin|pin@0||-3|1||||
+Nschematic:Wire_Pin|pin@1||-1.15|1||||
+Nschematic:Bus_Pin|pin@2||-3|-1||||
+Nschematic:Wire_Pin|pin@3||-1.15|-1||||
+Nschematic:Bus_Pin|pin@4||5|0||||
+Nschematic:Wire_Pin|pin@5||3|0||||
+Aschematic:wire|net@0|||0|pin@1||-1.15|1|pin@0||-3|1
+Aschematic:wire|net@1|||0|pin@3||-1.15|-1|pin@2||-3|-1
+Aschematic:wire|net@2|||1800|pin@5||3|0|pin@4||5|0
+EA_B95916||D5G2;X-5;|pin@0||I
+EB_B95916||D5G2;X-5;|pin@2||I
+EY_B95916||D5G2;X4;|pin@4||O
 X
 
 # Cell NOR2_20_5_B95916;1{lay}
@@ -555,7 +639,8 @@ Evdd||D5G2.5;X-8.75;Y-0.5;|pin@2||P
 X
 
 # Cell NOR2_20_5_B95916;1{sch}
-CNOR2_20_5_B95916;1{sch}||schematic|1729555517318|1729556127496|
+CNOR2_20_5_B95916;1{sch}||schematic|1729555517318|1729578234206|
+INOR2_20_5_B95916;1{ic}|NOR2_20_@0||11|28|||D5G4;
 NOff-Page|Y_B95916|D5G1;X-5.5;|1.5|-0.5||||
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@1||-32.5|11.5||||
