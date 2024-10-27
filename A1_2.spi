@@ -1,7 +1,7 @@
 *** SPICE deck for cell A1_2{lay} from library IE0311-B95916-B63464-B94031-II2022
 *** Created on jue oct 24, 2024 15:00:25
-*** Last revised on sáb oct 26, 2024 16:53:44
-*** Written on sáb oct 26, 2024 16:54:02 by Electric VLSI Design System, version 9.07
+*** Last revised on sáb oct 26, 2024 17:16:16
+*** Written on sáb oct 26, 2024 17:17:10 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 ***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
@@ -219,7 +219,7 @@ C7 Y_NOR2_20_5 0 0.433fF
 
 * Spice Code nodes in cell cell 'A1_2{lay}'
 .include spice.txt; Importa el archivo con los parámetros del proceso 
-VVDD Vdd 0 DC 5 ; Creamos la tensión Vds, A 5V
+VVDD VDD 0 DC 5 ; Creamos la tensión Vds, A 5V
 VGND GND 0 DC 0 ; Creamos el nodo de tierra que está a 0v 
 VA A 0 DC 5 ; Creamos el nodo de la entrada A que está a 5v 
 VB B 0 DC 0 ; Creamos la conexión entre B y GND, que inicialmente está a 0V
