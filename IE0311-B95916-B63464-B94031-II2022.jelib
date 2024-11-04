@@ -1666,7 +1666,7 @@ AMetal-1|out4|D5G4;|1|S1800|INV_20_1@3|Y_B94031|265.5|-6|pin@23||283|-6
 X
 
 # Cell RetardoFO16_NAND2_10_10_B95916;1{lay}
-CRetardoFO16_NAND2_10_10_B95916;1{lay}||mocmos|1730246729378|1730258545396|
+CRetardoFO16_NAND2_10_10_B95916;1{lay}||mocmos|1730246729378|1730731263404|
 IINV_20_10_B94031;1{lay}|INV_20_1@0||26.5|-6|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@1||101|-5.5|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@2||171|-6.5|||D5G4;
@@ -1689,8 +1689,6 @@ NMetal-1-Metal-2-Con|contact@0||63|-13.5||||
 NMetal-1-Metal-2-Con|contact@1||136|-18||||
 NMetal-1-Metal-2-Con|contact@2||208.5|-15.5||||
 NMetal-1-Metal-2-Con|contact@3||283|-18||||
-NMetal-1-Metal-2-Con|contact@4||-85|11||||
-NMetal-1-Metal-2-Con|contact@5||-15.5|18||||
 NMetal-1-Metal-2-Con|contact@6||381.5|-14||||
 NMetal-1-Metal-2-Con|contact@7||454.5|-18.5||||
 NMetal-1-Metal-2-Con|contact@8||527|-16||||
@@ -1725,9 +1723,6 @@ NMetal-1-Pin|pin@20||44|-14||||
 NMetal-1-Pin|pin@21||118.5|-18||||
 NMetal-1-Pin|pin@22||188.5|-15.5||||
 NMetal-1-Pin|pin@23||283|-6||||
-NMetal-1-Pin|pin@24||-85|-4.5||||
-NMetal-1-Pin|pin@25||-36.5|18||||
-Ngeneric:Invisible-Pin|pin@26||-360.5|85|||||SIM_spice_declaration(D5G5;)S[* Análisis de Retardo del inversor INV_20_10,".include C:\\Users\\user\\Desktop\\Dispositivos semiconductores\\spice.txt",* Definiciones de parámetros,.param VDD=5,.param PER=15.16n   ; Periodo ajustado (15 + 0.16) pues el carné B95916,* Fuente de alimentación,VDD vdd 0 DC {VDD},VGND GND 0 DC 0  ; Nodo de tierra,* Fuente de señal de entrada con forma de pulso (VA),"VA VA 0 PULSE(0 {VDD} 0 0.1n 0.1n {PER/2} {PER})  ; Pulso 0-5V, TR y TF = 0.1ns, 50% duty cycle",* Compuerta NAND2 de la entrada A que es la que importa,M1 Vout VA vdd vdd PMOS W=10u L=0.18u,M3 Vout VA 0 0 NMOS W=10u L=0.18u,* Análisis transitorio,.tran 0 50n  ; Simulación transitoria con tiempo final de 50ns,* Medición del tiempo de subida (t_rise),.MEAS TRAN t_rise TRIG V(VA)=2.5 FALL=1 TARG V(Vout)=2.5 RISE=1,* Medición del tiempo de bajada (t_fall),.MEAS TRAN t_fall TRIG V(VA)=2.5 RISE=1 TARG V(Vout)=2.5 FALL=1,* Visualización de la señal de salida,.plot V(vout) V(VA),.end]
 NMetal-2-Pin|pin@27||288.5|-1||||
 NMetal-2-Pin|pin@28||340|-0.5||||
 NMetal-2-Pin|pin@29||484.5|-0.5||||
@@ -1790,13 +1785,15 @@ NMetal-1-Pin|pin@85||912.5|-75.5||||
 NMetal-1-Pin|pin@86||581|-75||||
 NMetal-1-Pin|pin@87||562.5|-75||||
 NMetal-1-Pin|pin@88||591|75.5||||
+NMetal-2-Pin|pin@89||-78.5|-4.5||||
+NMetal-2-Pin|pin@90||-20.5|6||||
+AMetal-2|A|D5G4;|1|S0|NAND2_10@0|A_B95916|-62|-4.5|pin@89||-78.5|-4.5
+AMetal-2|B|D5G4;|1|S1800|NAND2_10@0|B_B95916|-36.5|6|pin@90||-20.5|6
 AMetal-1|GND|D5G4;|5|S0|pin@19||244|-75|pin@18||167|-75
 AMetal-1|GND_1|D5G4;|5|S0|pin@62||887.5|-75|pin@61||810.5|-75
-AMetal-1|VA|D5G4;|1|S0|NAND2_10@0|A_B95916|-62|-4.5|pin@24||-85|-4.5
-AMetal-1|VB|D5G4;|1|S0|contact@5||-15.5|18|pin@25||-36.5|18
 AMetal-1|VDD|D5G4;|5|S1800|pin@10||165.5|76|pin@11||242.5|76
 AMetal-1|VDD_1|D5G4;|5|S1800|pin@55||809|76|pin@56||886|76
-AMetal-2|Vout|D5G4;|1|S0|INV_20_1@0|A_B94031|21.5|-0.5|pin@0||-30|-0.5
+AMetal-2|VOUT|D5G4;|1|S0|INV_20_1@0|A_B94031|21.5|-0.5|pin@0||-30|-0.5
 AMetal-2|net@0||1|S2700|NAND2_10@0|Y_B95916|-30|-12|pin@0||-30|-0.5
 AMetal-2|net@2||1|S2700|INV_20_1@0|A_B94031|21.5|-0.5|pin@1||21.5|0
 AMetal-2|net@3||1|S0|INV_20_1@1|A_B94031|96|0|pin@1||21.5|0
@@ -1827,8 +1824,6 @@ AMetal-1|net@32||1|S900|INV_20_1@0|Y_B94031|44|-6|pin@20||44|-14
 AMetal-1|net@34||1|S900|INV_20_1@1|Y_B94031|118.5|-5.5|pin@21||118.5|-18
 AMetal-1|net@35||1|S900|INV_20_1@2|Y_B94031|188.5|-6.5|pin@22||188.5|-15.5
 AMetal-1|net@38||1|S2700|contact@3||283|-18|pin@23||283|-6
-AMetal-1|net@39||1|S900|contact@4||-85|11|pin@24||-85|-4.5
-AMetal-1|net@41||1|S2700|NAND2_10@0|B_B95916|-36.5|6|pin@25||-36.5|18
 AMetal-1|net@43||5|S1800|pin@15||-62.75|-75|pin@16||22.5|-75
 AMetal-1|net@44||5|S900|pin@31||339.5|75.5|INV_20_1@4|vdd|339.5|41
 AMetal-1|net@45||5|S900|pin@32||414|75.5|INV_20_1@5|vdd|414|41.5
@@ -1945,7 +1940,7 @@ AMetal-1|out16|D5G4;|1|S1800|INV_20_1@15|Y_B94031|1227.5|-6.5|pin@82||1245|-6.5
 X
 
 # Cell RetardoFO16_NAND2_20_5_B63464;1{lay}
-CRetardoFO16_NAND2_20_5_B63464;1{lay}||mocmos|1730246729378|1730341885706|
+CRetardoFO16_NAND2_20_5_B63464;1{lay}||mocmos|1730246729378|1730731239903|
 IINV_20_10_B94031;1{lay}|INV_20_1@0||26.5|-6|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@1||101|-5.5|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@2||171|-6.5|||D5G4;
@@ -1962,14 +1957,12 @@ IINV_20_10_B94031;1{lay}|INV_20_1@12||988.5|-6.5|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@13||1063|-6|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@14||1133|-7|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@15||1210|-6.5|||D5G4;
-INAND2_20_5_B63464;1{lay}|NAND2_20@0||-50|-2.5|||D5G4;
+INAND2_20_5_B63464;1{lay}|NAND2_20@0||-50|-2|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-1-Metal-2-Con|contact@0||63|-13.5||||
 NMetal-1-Metal-2-Con|contact@1||136|-18||||
 NMetal-1-Metal-2-Con|contact@2||208.5|-15.5||||
 NMetal-1-Metal-2-Con|contact@3||283|-18||||
-NMetal-1-Metal-2-Con|contact@4||-100|2||||
-NMetal-1-Metal-2-Con|contact@5||0|28.5||||
 NMetal-1-Metal-2-Con|contact@6||381.5|-14||||
 NMetal-1-Metal-2-Con|contact@7||454.5|-18.5||||
 NMetal-1-Metal-2-Con|contact@8||527|-16||||
@@ -2003,8 +1996,6 @@ NMetal-1-Pin|pin@20||44|-14||||
 NMetal-1-Pin|pin@21||118.5|-18||||
 NMetal-1-Pin|pin@22||188.5|-15.5||||
 NMetal-1-Pin|pin@23||283|-6||||
-NMetal-1-Pin|pin@24||-100|-13.5||||
-NMetal-1-Pin|pin@25||-21|28.5||||
 NMetal-2-Pin|pin@27||288.5|-1||||
 NMetal-2-Pin|pin@28||340|-0.5||||
 NMetal-2-Pin|pin@29||484.5|-0.5||||
@@ -2067,20 +2058,18 @@ NMetal-1-Pin|pin@85||912.5|-75.5||||
 NMetal-1-Pin|pin@86||581|-75||||
 NMetal-1-Pin|pin@87||562.5|-75||||
 NMetal-1-Pin|pin@88||591|75.5||||
-NMetal-1-Pin|pin@89||-77|-13.5||||
-NMetal-1-Pin|pin@93||-21|16.5||||
-NMetal-1-Pin|pin@94||-35.5|16.5||||
-NMetal-2-Pin|pin@95||-29|0||||
-NMetal-1-Pin|pin@96||-77|-9.5||||
 NMetal-1-Pin|pin@97||-60|76||||
-NMetal-1-Pin|pin@98||-62.75|-42.5||||
+NMetal-1-Pin|pin@98||-62.75|-42||||
+NMetal-2-Pin|pin@99||-82|-8.5||||
+NMetal-2-Pin|pin@100||-17.5|-2||||
+NMetal-2-Pin|pin@101||21.5|-14.5||||
+AMetal-2|A|D5G4;|1|S0|NAND2_20@0|A_B95916|-61|-8.5|pin@99||-82|-8.5
+AMetal-2|B|D5G4;|1|S1800|NAND2_20@0|B_B95916|-35.5|-2|pin@100||-17.5|-2
 AMetal-1|GND|D5G4;|5|S0|pin@19||244|-75|pin@18||167|-75
 AMetal-1|GND_1|D5G4;|5|S0|pin@62||887.5|-75|pin@61||810.5|-75
-AMetal-1|VA|D5G4;|1|S1800|pin@24||-100|-13.5|pin@89||-77|-13.5
-AMetal-1|VB|D5G4;|1|S0|contact@5||0|28.5|pin@25||-21|28.5
 AMetal-1|VDD|D5G4;|5|S1800|pin@10||165.5|76|pin@11||242.5|76
 AMetal-1|VDD_1|D5G4;|5|S1800|pin@55||809|76|pin@56||886|76
-AMetal-2|Vout|D5G4;|1|S0|pin@1||21.5|0|pin@95||-29|0
+AMetal-2|VOUT|D5G4;|1|S1800|NAND2_20@0|Y_B95916|-29|-14.5|pin@101||21.5|-14.5
 AMetal-2|net@2||1|S2700|INV_20_1@0|A_B94031|21.5|-0.5|pin@1||21.5|0
 AMetal-2|net@3||1|S0|INV_20_1@1|A_B94031|96|0|pin@1||21.5|0
 AMetal-2|net@4||1|S1800|INV_20_1@1|A_B94031|96|0|pin@2||166|0
@@ -2107,7 +2096,6 @@ AMetal-1|net@32||1|S900|INV_20_1@0|Y_B94031|44|-6|pin@20||44|-14
 AMetal-1|net@34||1|S900|INV_20_1@1|Y_B94031|118.5|-5.5|pin@21||118.5|-18
 AMetal-1|net@35||1|S900|INV_20_1@2|Y_B94031|188.5|-6.5|pin@22||188.5|-15.5
 AMetal-1|net@38||1|S2700|contact@3||283|-18|pin@23||283|-6
-AMetal-1|net@39||1|S900|contact@4||-100|2|pin@24||-100|-13.5
 AMetal-1|net@43||5|S1800|pin@15||-62.75|-75|pin@16||22.5|-75
 AMetal-1|net@44||5|S900|pin@31||339.5|75.5|INV_20_1@4|vdd|339.5|41
 AMetal-1|net@45||5|S900|pin@32||414|75.5|INV_20_1@5|vdd|414|41.5
@@ -2205,17 +2193,12 @@ AMetal-1|net@138||5|S2700|pin@87||562.5|-75|INV_20_1@7|gnd|562.5|-39.5
 AMetal-1|net@139||5|S0|pin@86||581|-75|pin@87||562.5|-75
 AMetal-1|net@140||5|S900|pin@50||591|76|pin@88||591|75.5
 AMetal-1|net@141||5|S1800|pin@34||561|75.5|pin@88||591|75.5
-AMetal-1|net@145||1|S900|pin@25||-21|28.5|pin@93||-21|16.5
-AMetal-1|net@146||1|S0|pin@93||-21|16.5|pin@94||-35.5|16.5
-AMetal-1|net@147||1|S2700|NAND2_20@0|B_B95916|-35.5|-3|pin@94||-35.5|16.5
-AMetal-2|net@148||1|S2700|NAND2_20@0|Y_B95916|-29|-15|pin@95||-29|0
-AMetal-1|net@150||1|S2700|pin@89||-77|-13.5|pin@96||-77|-9.5
-AMetal-1|net@151||1|S0|NAND2_20@0|A_B95916|-61|-9.5|pin@96||-77|-9.5
 AMetal-1|net@152||5|S0|pin@4||-52.5|76|pin@97||-60|76
 AMetal-1|net@153||5|S0|pin@97||-60|76|pin@7||-61|76
-AMetal-1|net@154||5|S2700|NAND2_20@0|vdd|-60|37.5|pin@97||-60|76
-AMetal-1|net@155||5|S0|NAND2_20@0|gnd|-59.75|-42.5|pin@98||-62.75|-42.5
-AMetal-1|net@156||5|S2700|pin@15||-62.75|-75|pin@98||-62.75|-42.5
+AMetal-1|net@154||5|S2700|NAND2_20@0|vdd|-60|38|pin@97||-60|76
+AMetal-1|net@155||5|S0|NAND2_20@0|gnd|-59.75|-42|pin@98||-62.75|-42
+AMetal-1|net@156||5|S2700|pin@15||-62.75|-75|pin@98||-62.75|-42
+AMetal-2|net@159||1|S900|pin@1||21.5|0|pin@101||21.5|-14.5
 AMetal-1|out1|D5G4;|1|S0|contact@0||63|-14|pin@20||44|-14
 AMetal-1|out2|D5G4;|1|S0|contact@1||136|-18|pin@21||118.5|-18
 AMetal-1|out3|D5G4;|1|S0|contact@2||208.5|-15.5|pin@22||188.5|-15.5
@@ -2235,7 +2218,7 @@ AMetal-1|out16|D5G4;|1|S1800|INV_20_1@15|Y_B94031|1227.5|-6.5|pin@82||1245|-6.5
 X
 
 # Cell RetardoFO16_NOR2_10_10_B95916;1{lay}
-CRetardoFO16_NOR2_10_10_B95916;1{lay}||mocmos|1730246729378|1730260091717|
+CRetardoFO16_NOR2_10_10_B95916;1{lay}||mocmos|1730246729378|1730731379542|
 IINV_20_10_B94031;1{lay}|INV_20_1@0||26.5|-6|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@1||101|-5.5|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@2||171|-6.5|||D5G4;
@@ -2258,8 +2241,6 @@ NMetal-1-Metal-2-Con|contact@0||63|-13.5||||
 NMetal-1-Metal-2-Con|contact@1||136|-18||||
 NMetal-1-Metal-2-Con|contact@2||208.5|-15.5||||
 NMetal-1-Metal-2-Con|contact@3||283|-18||||
-NMetal-1-Metal-2-Con|contact@4||-85|11||||
-NMetal-1-Metal-2-Con|contact@5||-9|20||||
 NMetal-1-Metal-2-Con|contact@6||381.5|-14||||
 NMetal-1-Metal-2-Con|contact@7||454.5|-18.5||||
 NMetal-1-Metal-2-Con|contact@8||527|-16||||
@@ -2294,8 +2275,6 @@ NMetal-1-Pin|pin@20||44|-14||||
 NMetal-1-Pin|pin@21||118.5|-18||||
 NMetal-1-Pin|pin@22||188.5|-15.5||||
 NMetal-1-Pin|pin@23||283|-6||||
-NMetal-1-Pin|pin@24||-85|-1.5||||
-NMetal-1-Pin|pin@25||-30|20||||
 NMetal-2-Pin|pin@27||288.5|-1||||
 NMetal-2-Pin|pin@28||340|-0.5||||
 NMetal-2-Pin|pin@29||484.5|-0.5||||
@@ -2358,18 +2337,18 @@ NMetal-1-Pin|pin@85||912.5|-75.5||||
 NMetal-1-Pin|pin@86||581|-75||||
 NMetal-1-Pin|pin@87||562.5|-75||||
 NMetal-1-Pin|pin@88||591|75.5||||
-NMetal-1-Pin|pin@94||-85|-2.5||||
 NMetal-1-Pin|pin@95||-70.25|-75||||
 NMetal-1-Pin|pin@96||-68|76||||
 NMetal-2-Pin|pin@97||-37.5|-0.5||||
-NMetal-1-Pin|pin@98||-30|10||||
+NMetal-2-Pin|pin@99||-90|-2||||
+NMetal-2-Pin|pin@100||-23.5|10.5||||
+AMetal-2|A|D5G4;|1|S0|NOR2_10_@0|A_B95916|-69.5|-2|pin@99||-90|-2
+AMetal-2|B|D5G4;|1|S1800|NOR2_10_@0|B_B95916|-40.5|10.5|pin@100||-23.5|10.5
 AMetal-1|GND|D5G4;|5|S0|pin@19||244|-75|pin@18||167|-75
 AMetal-1|GND_1|D5G4;|5|S0|pin@62||887.5|-75|pin@61||810.5|-75
-AMetal-1|VA|D5G4;|1|S0|NOR2_10_@0|A_B95916|-70|-2.5|pin@94||-85|-2.5
-AMetal-1|VB|D5G4;|1|S0|contact@5||-9|20|pin@25||-30|20
 AMetal-1|VDD|D5G4;|5|S1800|pin@10||165.5|76|pin@11||242.5|76
 AMetal-1|VDD_1|D5G4;|5|S1800|pin@55||809|76|pin@56||886|76
-AMetal-2|Vout|D5G4;|1|S0|INV_20_1@0|A_B94031|21.5|-0.5|pin@0||-30|-0.5
+AMetal-2|VOUT|D5G4;X-5;|1|S0|INV_20_1@0|A_B94031|21.5|-0.5|pin@0||-30|-0.5
 AMetal-2|net@2||1|S2700|INV_20_1@0|A_B94031|21.5|-0.5|pin@1||21.5|0
 AMetal-2|net@3||1|S0|INV_20_1@1|A_B94031|96|0|pin@1||21.5|0
 AMetal-2|net@4||1|S1800|INV_20_1@1|A_B94031|96|0|pin@2||166|0
@@ -2397,7 +2376,6 @@ AMetal-1|net@32||1|S900|INV_20_1@0|Y_B94031|44|-6|pin@20||44|-14
 AMetal-1|net@34||1|S900|INV_20_1@1|Y_B94031|118.5|-5.5|pin@21||118.5|-18
 AMetal-1|net@35||1|S900|INV_20_1@2|Y_B94031|188.5|-6.5|pin@22||188.5|-15.5
 AMetal-1|net@38||1|S2700|contact@3||283|-18|pin@23||283|-6
-AMetal-1|net@39||1|S900|contact@4||-85|11|pin@24||-85|-1.5
 AMetal-1|net@43||5|S1800|pin@15||-62.75|-75|pin@16||22.5|-75
 AMetal-1|net@44||5|S900|pin@31||339.5|75.5|INV_20_1@4|vdd|339.5|41
 AMetal-1|net@45||5|S900|pin@32||414|75.5|INV_20_1@5|vdd|414|41.5
@@ -2495,15 +2473,12 @@ AMetal-1|net@138||5|S2700|pin@87||562.5|-75|INV_20_1@7|gnd|562.5|-39.5
 AMetal-1|net@139||5|S0|pin@86||581|-75|pin@87||562.5|-75
 AMetal-1|net@140||5|S900|pin@50||591|76|pin@88||591|75.5
 AMetal-1|net@141||5|S1800|pin@34||561|75.5|pin@88||591|75.5
-AMetal-1|net@147||1|S900|pin@24||-85|-1.5|pin@94||-85|-2.5
 AMetal-1|net@148||5|S0|pin@15||-62.75|-75|pin@95||-70.25|-75
 AMetal-1|net@149||5|S900|NOR2_10_@0|gnd|-70.25|-36.5|pin@95||-70.25|-75
 AMetal-1|net@150||5|S0|pin@7||-61|76|pin@96||-68|76
 AMetal-1|net@151||5|S2700|NOR2_10_@0|vdd|-68|43.5|pin@96||-68|76
 AMetal-2|net@152||1|S2700|NOR2_10_@0|Y_B95916|-37.5|-6|pin@97||-37.5|-0.5
 AMetal-2|net@153||1|S0|pin@0||-30|-0.5|pin@97||-37.5|-0.5
-AMetal-1|net@154||1|S1800|NOR2_10_@0|B_B95916|-41|10|pin@98||-30|10
-AMetal-1|net@155||1|S900|pin@25||-30|20|pin@98||-30|10
 AMetal-1|out1|D5G4;|1|S0|contact@0||63|-14|pin@20||44|-14
 AMetal-1|out2|D5G4;|1|S0|contact@1||136|-18|pin@21||118.5|-18
 AMetal-1|out3|D5G4;|1|S0|contact@2||208.5|-15.5|pin@22||188.5|-15.5
@@ -2523,7 +2498,7 @@ AMetal-1|out16|D5G4;|1|S1800|INV_20_1@15|Y_B94031|1227.5|-6.5|pin@82||1245|-6.5
 X
 
 # Cell RetardoFO16_NOR2_20_5_B63464;1{lay}
-CRetardoFO16_NOR2_20_5_B63464;1{lay}||mocmos|1730246729378|1730260699015|
+CRetardoFO16_NOR2_20_5_B63464;1{lay}||mocmos|1730246729378|1730731470027|
 IINV_20_10_B94031;1{lay}|INV_20_1@0||26.5|-6|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@1||101|-5.5|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@2||171|-6.5|||D5G4;
@@ -2546,8 +2521,6 @@ NMetal-1-Metal-2-Con|contact@0||63|-13.5||||
 NMetal-1-Metal-2-Con|contact@1||136|-18||||
 NMetal-1-Metal-2-Con|contact@2||208.5|-15.5||||
 NMetal-1-Metal-2-Con|contact@3||283|-18||||
-NMetal-1-Metal-2-Con|contact@4||-100|2||||
-NMetal-1-Metal-2-Con|contact@5||0|28.5||||
 NMetal-1-Metal-2-Con|contact@6||381.5|-14||||
 NMetal-1-Metal-2-Con|contact@7||454.5|-18.5||||
 NMetal-1-Metal-2-Con|contact@8||527|-16||||
@@ -2581,8 +2554,6 @@ NMetal-1-Pin|pin@20||44|-14||||
 NMetal-1-Pin|pin@21||118.5|-18||||
 NMetal-1-Pin|pin@22||188.5|-15.5||||
 NMetal-1-Pin|pin@23||283|-6||||
-NMetal-1-Pin|pin@24||-100|-13.5||||
-NMetal-1-Pin|pin@25||-21|28.5||||
 NMetal-2-Pin|pin@27||288.5|-1||||
 NMetal-2-Pin|pin@28||340|-0.5||||
 NMetal-2-Pin|pin@29||484.5|-0.5||||
@@ -2645,20 +2616,19 @@ NMetal-1-Pin|pin@85||912.5|-75.5||||
 NMetal-1-Pin|pin@86||581|-75||||
 NMetal-1-Pin|pin@87||562.5|-75||||
 NMetal-1-Pin|pin@88||591|75.5||||
-NMetal-1-Pin|pin@93||-21|16.5||||
-NMetal-1-Pin|pin@97||-60|-13.5||||
 NMetal-1-Pin|pin@98||-62.5|-75||||
 NMetal-1-Pin|pin@99||-60|-75||||
 NMetal-2-Pin|pin@100||21.5|-9||||
-NMetal-1-Pin|pin@101||-21|0||||
 NMetal-1-Pin|pin@102||-57.75|76||||
+NMetal-2-Pin|pin@103||-79|-1.5||||
+NMetal-2-Pin|pin@104||-17|0.5||||
+AMetal-2|A|D5G4;|1|S0|NOR2_20_@0|A_B95916|-60|-1.5|pin@103||-79|-1.5
+AMetal-2|B|D5G4;|1|S1800|NOR2_20_@0|B_B95916|-31|0.5|pin@104||-17|0.5
 AMetal-1|GND|D5G4;|5|S0|pin@19||244|-75|pin@18||167|-75
 AMetal-1|GND_1|D5G4;|5|S0|pin@62||887.5|-75|pin@61||810.5|-75
-AMetal-1|VA|D5G4;|1|S1800|pin@24||-100|-13.5|pin@97||-60|-13.5
-AMetal-1|VB|D5G4;|1|S0|contact@5||0|28.5|pin@25||-21|28.5
 AMetal-1|VDD|D5G4;|5|S1800|pin@10||165.5|76|pin@11||242.5|76
 AMetal-1|VDD_1|D5G4;|5|S1800|pin@55||809|76|pin@56||886|76
-AMetal-2|Vout|D5G4;|1|S1800|NOR2_20_@0|Y_B95916|-27.5|-9|pin@100||21.5|-9
+AMetal-2|VOUT|D5G4;|1|S1800|NOR2_20_@0|Y_B95916|-27.5|-9|pin@100||21.5|-9
 AMetal-2|net@2||1|S2700|INV_20_1@0|A_B94031|21.5|-0.5|pin@1||21.5|0
 AMetal-2|net@3||1|S0|INV_20_1@1|A_B94031|96|0|pin@1||21.5|0
 AMetal-2|net@4||1|S1800|INV_20_1@1|A_B94031|96|0|pin@2||166|0
@@ -2685,7 +2655,6 @@ AMetal-1|net@32||1|S900|INV_20_1@0|Y_B94031|44|-6|pin@20||44|-14
 AMetal-1|net@34||1|S900|INV_20_1@1|Y_B94031|118.5|-5.5|pin@21||118.5|-18
 AMetal-1|net@35||1|S900|INV_20_1@2|Y_B94031|188.5|-6.5|pin@22||188.5|-15.5
 AMetal-1|net@38||1|S2700|contact@3||283|-18|pin@23||283|-6
-AMetal-1|net@39||1|S900|contact@4||-100|2|pin@24||-100|-13.5
 AMetal-1|net@44||5|S900|pin@31||339.5|75.5|INV_20_1@4|vdd|339.5|41
 AMetal-1|net@45||5|S900|pin@32||414|75.5|INV_20_1@5|vdd|414|41.5
 AMetal-1|net@46||1|S900|INV_20_1@4|Y_B94031|362.5|-6.5|pin@39||362.5|-14.5
@@ -2782,16 +2751,12 @@ AMetal-1|net@138||5|S2700|pin@87||562.5|-75|INV_20_1@7|gnd|562.5|-39.5
 AMetal-1|net@139||5|S0|pin@86||581|-75|pin@87||562.5|-75
 AMetal-1|net@140||5|S900|pin@50||591|76|pin@88||591|75.5
 AMetal-1|net@141||5|S1800|pin@34||561|75.5|pin@88||591|75.5
-AMetal-1|net@145||1|S900|pin@25||-21|28.5|pin@93||-21|16.5
 AMetal-1|net@160||5|S0|pin@4||-52.5|76|pin@7||-61|76
-AMetal-1|net@162||1|S900|NOR2_20_@0|A_B95916|-60|-1.5|pin@97||-60|-13.5
 AMetal-1|net@164||5|S1800|pin@15||-62.75|-75|pin@98||-62.5|-75
 AMetal-1|net@165||5|S1800|pin@98||-62.5|-75|pin@16||22.5|-75
 AMetal-1|net@166||5|S1800|pin@98||-62.5|-75|pin@99||-60|-75
 AMetal-1|net@167||5|S900|NOR2_20_@0|gnd|-60|-39.5|pin@99||-60|-75
 AMetal-2|net@169||1|S900|pin@1||21.5|0|pin@100||21.5|-9
-AMetal-1|net@170||1|S1800|NOR2_20_@0|B_B95916|-31.5|0|pin@101||-21|0
-AMetal-1|net@171||1|S900|pin@93||-21|16.5|pin@101||-21|0
 AMetal-1|net@172||5|S2700|NOR2_20_@0|vdd|-57.75|40.5|pin@102||-57.75|76
 AMetal-1|net@173||5|S1800|pin@7||-61|76|pin@102||-57.75|76
 AMetal-1|out1|D5G4;|1|S0|contact@0||63|-14|pin@20||44|-14
