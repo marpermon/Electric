@@ -1,0 +1,124 @@
+*** SPICE deck for cell RetardoFO4_NOR2_20_5_B95916{lay} from library IE0311-B95916-B63464-B94031-II2022
+*** Created on mar oct 29, 2024 18:05:29
+*** Last revised on lun nov 04, 2024 17:57:38
+*** Written on lun nov 04, 2024 17:58:23 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    N-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=3.0ohms/sq
+***    Polysilicon-1:	areacap=0.1467FF/um^2,	edgecap=0.0608FF/um,	res=6.2ohms/sq
+***    Polysilicon-2:	areacap=1.0FF/um^2,	edgecap=0.0FF/um,	res=50.0ohms/sq
+***    Transistor-Poly:	areacap=0.09FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Poly-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.2ohms/sq
+***    Active-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Metal-1:	areacap=0.1209FF/um^2,	edgecap=0.1104FF/um,	res=0.078ohms/sq
+***    Via1:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+***    Metal-2:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via2:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.9ohms/sq
+***    Metal-3:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via3:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-4:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via4:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-5:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via5:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-6:	areacap=0.0423FF/um^2,	edgecap=0.1273FF/um,	res=0.036ohms/sq
+***    Hi-Res:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+
+*** SUBCIRCUIT IE0311-B95916-B63464-B94031-II2022__INV_20_10_B94031 FROM CELL INV_20_10_B94031{lay}
+.SUBCKT IE0311-B95916-B63464-B94031-II2022__INV_20_10_B94031 A_B94031 gnd vdd Y_B94031
+Mnmos@0 Y_B94031 A_B94031#0nmos@0_poly-right gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=5.61P PS=23U PD=16.7U
+Mpmos@0 Y_B94031 A_B94031#4pmos@0_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=5.61P PS=30U PD=16.7U
+** Extracted Parasitic Capacitors ***
+C0 Y_B94031 0 2.889fF
+C1 A_B94031 0 0.261fF
+C2 A_B94031#0nmos@0_poly-right 0 0.105fF
+C3 A_B94031#5pin@36_polysilicon-1 0 0.284fF
+** Extracted Parasitic Resistors ***
+R0 A_B94031#4pmos@0_poly-left A_B94031#4pmos@0_poly-left##0 7.233
+R1 A_B94031#4pmos@0_poly-left##0 A_B94031#4pmos@0_poly-left##1 7.233
+R2 A_B94031#4pmos@0_poly-left##1 A_B94031#5pin@36_polysilicon-1 7.233
+R3 A_B94031#5pin@36_polysilicon-1 A_B94031#5pin@36_polysilicon-1##0 8.99
+R4 A_B94031#5pin@36_polysilicon-1##0 A_B94031#5pin@36_polysilicon-1##1 8.99
+R5 A_B94031#5pin@36_polysilicon-1##1 A_B94031#5pin@36_polysilicon-1##2 8.99
+R6 A_B94031#5pin@36_polysilicon-1##2 A_B94031#5pin@36_polysilicon-1##3 8.99
+R7 A_B94031#5pin@36_polysilicon-1##3 A_B94031#0nmos@0_poly-right 8.99
+R8 A_B94031 A_B94031#5pin@36_polysilicon-1 6.2
+.ENDS IE0311-B95916-B63464-B94031-II2022__INV_20_10_B94031
+
+*** SUBCIRCUIT IE0311-B95916-B63464-B94031-II2022__NOR2_20_5_B95916 FROM CELL NOR2_20_5_B95916{lay}
+.SUBCKT IE0311-B95916-B63464-B94031-II2022__NOR2_20_5_B95916 A_B95916 B_B95916 gnd vdd Y_B95916
+Mnmos@2 gnd A_B95916#3nmos@2_poly-right Y_B95916 gnd NMOS L=0.4U W=1U AS=2.4P AD=3.175P PS=6.4U PD=7.75U
+Mnmos@3 Y_B95916 B_B95916#3nmos@3_poly-right gnd gnd NMOS L=0.4U W=1U AS=3.175P AD=2.4P PS=7.75U PD=6.4U
+Mpmos@2 net@167 A_B95916#0pmos@2_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=2.4P PS=20.8U PD=5.2U
+Mpmos@3 Y_B95916 B_B95916#6pmos@3_poly-left net@167 vdd PMOS L=0.4U W=4U AS=2.4P AD=2.4P PS=5.2U PD=6.4U
+** Extracted Parasitic Capacitors ***
+C0 Y_B95916 0 6.462fF
+C1 B_B95916 0 0.101fF
+C2 A_B95916#1pin@33_polysilicon-1 0 0.266fF
+C3 B_B95916#0pin@37_polysilicon-1 0 0.303fF
+C4 B_B95916#4pin@41_polysilicon-1 0 0.165fF
+** Extracted Parasitic Resistors ***
+R0 A_B95916#0pmos@2_poly-left A_B95916#0pmos@2_poly-left##0 8.06
+R1 A_B95916#0pmos@2_poly-left##0 A_B95916#0pmos@2_poly-left##1 8.06
+R2 A_B95916#0pmos@2_poly-left##1 A_B95916#0pmos@2_poly-left##2 8.06
+R3 A_B95916#0pmos@2_poly-left##2 A_B95916#0pmos@2_poly-left##3 8.06
+R4 A_B95916#0pmos@2_poly-left##3 A_B95916#1pin@33_polysilicon-1 8.06
+R5 B_B95916#0pin@37_polysilicon-1 B_B95916#0pin@37_polysilicon-1##0 9.106
+R6 B_B95916#0pin@37_polysilicon-1##0 B_B95916#0pin@37_polysilicon-1##1 9.106
+R7 B_B95916#0pin@37_polysilicon-1##1 B_B95916#0pin@37_polysilicon-1##2 9.106
+R8 B_B95916#0pin@37_polysilicon-1##2 B_B95916 9.106
+R9 A_B95916#3nmos@2_poly-right A_B95916#3nmos@2_poly-right##0 8.746
+R10 A_B95916#3nmos@2_poly-right##0 A_B95916#3nmos@2_poly-right##1 8.746
+R11 A_B95916#3nmos@2_poly-right##1 A_B95916#3nmos@2_poly-right##2 8.746
+R12 A_B95916#3nmos@2_poly-right##2 A_B95916#3nmos@2_poly-right##3 8.746
+R13 A_B95916#3nmos@2_poly-right##3 A_B95916#3nmos@2_poly-right##4 8.746
+R14 A_B95916#3nmos@2_poly-right##4 A_B95916#3nmos@2_poly-right##5 8.746
+R15 A_B95916#3nmos@2_poly-right##5 A_B95916#1pin@33_polysilicon-1 8.746
+R16 B_B95916#3nmos@3_poly-right B_B95916#3nmos@3_poly-right##0 8.525
+R17 B_B95916#3nmos@3_poly-right##0 B_B95916#3nmos@3_poly-right##1 8.525
+R18 B_B95916#3nmos@3_poly-right##1 B_B95916#4pin@41_polysilicon-1 8.525
+R19 A_B95916 A_B95916##0 7.233
+R20 A_B95916##0 A_B95916##1 7.233
+R21 A_B95916##1 A_B95916#1pin@33_polysilicon-1 7.233
+R22 B_B95916#0pin@37_polysilicon-1 B_B95916#0pin@37_polysilicon-1##0 9.688
+R23 B_B95916#0pin@37_polysilicon-1##0 B_B95916#0pin@37_polysilicon-1##1 9.688
+R24 B_B95916#0pin@37_polysilicon-1##1 B_B95916#0pin@37_polysilicon-1##2 9.688
+R25 B_B95916#0pin@37_polysilicon-1##2 B_B95916#4pin@41_polysilicon-1 9.688
+R26 B_B95916#6pmos@3_poly-left B_B95916#6pmos@3_poly-left##0 8.913
+R27 B_B95916#6pmos@3_poly-left##0 B_B95916#6pmos@3_poly-left##1 8.913
+R28 B_B95916#6pmos@3_poly-left##1 B_B95916#6pmos@3_poly-left##2 8.913
+R29 B_B95916#6pmos@3_poly-left##2 B_B95916#0pin@37_polysilicon-1 8.913
+.ENDS IE0311-B95916-B63464-B94031-II2022__NOR2_20_5_B95916
+
+*** TOP LEVEL CELL: RetardoFO4_NOR2_20_5_B95916{lay}
+XINV_20_1@0 VOUT GND VDD out1 IE0311-B95916-B63464-B94031-II2022__INV_20_10_B94031
+XINV_20_1@1 VOUT GND VDD out2 IE0311-B95916-B63464-B94031-II2022__INV_20_10_B94031
+XINV_20_1@2 VOUT GND VDD out3 IE0311-B95916-B63464-B94031-II2022__INV_20_10_B94031
+XINV_20_1@3 VOUT GND VDD out4 IE0311-B95916-B63464-B94031-II2022__INV_20_10_B94031
+XNOR2_20_@0 A B GND VDD VOUT IE0311-B95916-B63464-B94031-II2022__NOR2_20_5_B95916
+** Extracted Parasitic Capacitors ***
+C0 VOUT 0 15.026fF
+C1 out1 0 1.715fF
+C2 GND 0 43.143fF
+C3 VDD 0 41.65fF
+C4 out2 0 1.905fF
+C5 out3 0 1.842fF
+C6 out4 0 1.873fF
+C7 A 0 1.364fF
+C8 B 0 1.18fF
+** Extracted Parasitic Resistors ***
+
+* Spice Code nodes in cell cell 'RetardoFO4_NOR2_20_5_B95916{lay}'
+.include spice.txt
+* Fuente de alimentación
+VVDD VDD 0 DC 5        ; Nodo VDD a 5V
+VGND GND 0 DC 0        ; Nodo de tierra a 0V
+* Entradas de la puerta
+VB B 0 DC 0           ; La entrada B se mantiene en 0 lógico constante
+VA A 0 PULSE(0 5 0 0.1n 0.1n 7.82n 15.64n) ; Pulso en la entrada A: 0-5V, 50% duty cycle, TR y TF = 0.1ns
+* Mediciones de tiempo de subida y bajada en el nodo de salida
+.MEAS TRAN t_rise TRIG V(A)=2.5 FALL=1 TARG V(Vout)=2.5 RISE=1
+.MEAS TRAN t_fall TRIG V(A)=2.5 RISE=1 TARG V(Vout)=2.5 FALL=1
+* Análisis transitorio
+.tran 0 50n        ; Simulación transitoria hasta 50ns
+.END
