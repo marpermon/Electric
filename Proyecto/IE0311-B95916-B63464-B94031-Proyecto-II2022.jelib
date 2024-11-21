@@ -236,7 +236,7 @@ EY_B95916||D5G2;X1.5;|Y_B95916|y|O
 X
 
 # Cell PASO-B95916;1{ic}
-CPASO-B95916;1{ic}||artwork|1731724320147|1731724438487|E
+CPASO-B95916;1{ic}||artwork|1731724320147|1732214640994|E
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NTriangle|art@2||-1.5|1.5|3|3|RRR|
 NTriangle|art@3||-1.5|-1.5|3|3|RRR|
@@ -247,14 +247,22 @@ Nschematic:Bus_Pin|pin@0||-5|0||||
 Nschematic:Wire_Pin|pin@1||-3|0||||
 Nschematic:Bus_Pin|pin@2||5|0||||
 Nschematic:Wire_Pin|pin@3||3|0||||
+Nschematic:Bus_Pin|pin@4||0|1.5|||RR|
+Nschematic:Wire_Pin|pin@5||0|5.5||||
+Nschematic:Bus_Pin|pin@6||0|-5||||
+Nschematic:Wire_Pin|pin@7||0|-1.5||||
 Aschematic:wire|net@0|||0|pin@1||-3|0|pin@0||-5|0
 Aschematic:wire|net@1|||1800|pin@3||3|0|pin@2||5|0
-EA||D5G2;|pin@0||I
-EY||D5G2;|pin@2||O
+Aschematic:wire|net@2|||F900|pin@5||0|5.5|pin@4||0|1.5
+Aschematic:wire|net@3|||900|pin@7||0|-1.5|pin@6||0|-5
+EA|A_B95916|D5G2;X-4;|pin@0||I
+EY|Y_B95916|D5G2;X3.5;|pin@2||O
+Esel_B95916||D5G2;X-0.5;Y-1;|pin@6||I
+Esel_b_B95916||D5G2;Y-5;|pin@4||I
 X
 
 # Cell PASO-B95916;1{lay}
-CPASO-B95916;1{lay}||mocmos|1731724520803|1732034591917||DRC_last_good_drc_area_date()G1731728084002|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1731728084002
+CPASO-B95916;1{lay}||mocmos|1731724520803|1732215281714||DRC_last_good_drc_area_date()G1731728084002|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1731728084002
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-1-P-Active-Con|contact@11||-4|18.5||5||
 NMetal-1-N-Active-Con|contact@12||-4|-17||5||
@@ -280,6 +288,7 @@ NPolysilicon-1-Pin|pin@49||0|25.5||||
 NMetal-1-Pin|pin@50||-4|1||||
 NMetal-1-Pin|pin@51||4|1||||
 NPolysilicon-1-Pin|pin@52||0|-24.5||||
+NMetal-1-Pin|pin@53||-4|42||||
 NP-Transistor|pmos@2||0|18.5|7||R||SIM_spice_model(D5G3;)SPMOS
 NMetal-1-P-Well-Con|substr@1||0|-38|15|1||
 NMetal-1-N-Well-Con|well@1||0|42|15|1||
@@ -308,28 +317,37 @@ AMetal-1|net@100||1|S900|pin@51||4|1|contact@13||4|-20
 AMetal-1|net@101||1|S0|contact@19||18.5|1|pin@51||4|1
 APolysilicon-1|net@102|||S900|nmos@2|poly-left|0|-24|pin@52||0|-24.5
 APolysilicon-1|net@103|||JS1800|pin@44||-1.5|-24.5|pin@52||0|-24.5
+AMetal-1|net@104||5|S1800|pin@30||-4.5|42|pin@53||-4|42
+AMetal-1|net@105||1|S2700|contact@11||-4|18.5|pin@53||-4|42
+AMetal-1|net@106||1|S900|contact@13||4|-17|substr@1||4|-38
+EA_B95916||D5G3;X-10.5;|contact@18||I
+EY_B95916||D5G3;X10.5;|contact@19||O
+Esel_B95916||D5G3;X-12;|contact@15||I
+Esel_b_B95916||D5G3;X13;|contact@17||I
 X
 
 # Cell PASO-B95916;1{sch}
-CPASO-B95916;1{sch}||schematic|1731722690609|1731724320152|
-NOff-Page|A|D5G1;|-6.5|-0.5||||
-IPASO-B95916;1{ic}|PASO-B95@1||12.5|14|||D5G4;
-NOff-Page|Y|D5G1;|4.5|-0.5|||XY|
+CPASO-B95916;1{sch}||schematic|1731722690609|1732213942642|
+NOff-Page|A_B95916|D5G1;|-6.5|-0.5||||
+IPASO-B95916;1{ic}|PASO-B95@1||22|7|||D5G4;
+NOff-Page|Y_B95916|D5G1;|4.5|-0.5|||XY|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NTransistor|nmos@0||-1|-4|||RR||ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S10
 NWire_Pin|pin@0||-3|-0.5||||
 NWire_Pin|pin@1||1|-0.5||||
 NTransistor|pmos@0||-1|3||||2|ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S10
-NOff-Page|sel|D5G1;|-1|-8|||R|
-NOff-Page|sel_b|D5G1;|-1|7|||RRR|
+NOff-Page|sel_B95916|D5G1;|-1|-8|||R|
+NOff-Page|sel_b_B95916|D5G1;|-1|7|||RRR|
 Awire|net@2|||900|pmos@0|s|-3|1|pin@0||-3|-0.5
 Awire|net@3|||900|pin@0||-3|-0.5|nmos@0|d|-3|-2
-Awire|net@4|||1800|A|y|-4.5|-0.5|pin@0||-3|-0.5
+Awire|net@4|||1800|A_B95916|y|-4.5|-0.5|pin@0||-3|-0.5
 Awire|net@5|||900|pmos@0|d|1|1|pin@1||1|-0.5
 Awire|net@6|||900|pin@1||1|-0.5|nmos@0|s|1|-2
-Awire|net@7|||0|Y|a|6.5|-0.5|pin@1||1|-0.5
-Awire|net@8|||900|sel_b|y|-1|5|pmos@0|g|-1|4
-Awire|net@9|||2700|sel|y|-1|-6|nmos@0|g|-1|-5
-EA||D5G2;|A|y|I
-EY||D5G2;|Y|a|O
+Awire|net@7|||0|Y_B95916|a|6.5|-0.5|pin@1||1|-0.5
+Awire|net@8|||900|sel_b_B95916|y|-1|5|pmos@0|g|-1|4
+Awire|net@9|||2700|sel_B95916|y|-1|-6|nmos@0|g|-1|-5
+EA|A_B95916|D5G1;X-2.5;Y2;|A_B95916|y|I
+EY|Y_B95916|D5G1;X1.5;Y-2;|Y_B95916|a|O
+Esel_B95916||D5G1;|sel_B95916|a|I
+Esel_b_B95916||D5G1;|sel_b_B95916|a|I
 X
