@@ -265,7 +265,7 @@ Esel_b_B95916||D5G2;Y-5;|pin@4||I
 X
 
 # Cell PASO-B95916;1{lay}
-CPASO-B95916;1{lay}||mocmos|1731724520803|1732216987165||DRC_last_good_drc_area_date()G1732216216992|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1732216216992
+CPASO-B95916;1{lay}||mocmos|1731724520803|1732333071407||DRC_last_good_drc_area_date()G1732216216992|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1732216216992
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-1-P-Active-Con|contact@11||-4|18.5||5||
 NMetal-1-N-Active-Con|contact@12||-4|-17||5||
@@ -325,16 +325,16 @@ AMetal-1|net@101||1|S0|contact@19||18.5|1|pin@51||4|1
 APolysilicon-1|net@102|||S900|nmos@2|poly-left|0|-24|pin@52||0|-24.5
 APolysilicon-1|net@103|||JS1800|pin@44||-1.5|-24.5|pin@52||0|-24.5
 AMetal-1|net@104||5|S1800|pin@30||-4.5|42|pin@53||-4|42
-AMetal-1|net@105||1|S2700|contact@11||-4|18.5|pin@53||-4|42
-AMetal-1|net@106||1|S900|contact@13||4|-17|substr@1||4|-38
 AMetal-1|net@108||1|S2700|contact@20||-17.5|-25|pin@54||-17.5|-24.5
 AMetal-1|net@109||1|S0|contact@15||-17.5|-24.5|pin@54||-17.5|-24.5
 AMetal-1|net@110||1|S1800|contact@21||21.5|31|pin@55||21.5|31
 AMetal-1|net@111||1|S2700|contact@17||21.5|30.5|pin@55||21.5|31
 EA_B95916||D5G3;X-10.5;|contact@18||I
 EY_B95916||D5G3;X10.5;|contact@19||O
+Egnd||D5G3;X-10;|pin@32||G
 Esel_B95916||D5G3;X-10.5;Y-0.5;|contact@20||I
 Esel_b_B95916||D5G3;X4.5;Y-5;|contact@21||I
+Evdd||D5G3;X-9;|pin@28||P
 X
 
 # Cell PASO-B95916;1{sch}
@@ -364,16 +364,20 @@ Esel_b_B95916||D5G1;|sel_b_B95916|a|I
 X
 
 # Cell PASO_SIM_B95916;1{lay}
-CPASO_SIM_B95916;1{lay}||mocmos|1732215765875|1732217132614|
+CPASO_SIM_B95916;1{lay}||mocmos|1732215765875|1732333157953|
 IPASO-B95916;1{lay}|PASO-B95@1||-1.5|-2|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-2-Pin|pin@4||53|-1||||
 NMetal-2-Pin|pin@5||-51|-1||||
 NMetal-2-Pin|pin@6||-52.5|-26.5||||
 NMetal-2-Pin|pin@9||43|28.5||||
-Ngeneric:Invisible-Pin|pin@10||-55.5|26.5|||||SIM_spice_card(D5G1;)Stext
+Ngeneric:Invisible-Pin|pin@10||-74.5|23|||||SIM_spice_card(D5G1;)Stext
+NMetal-1-Pin|pin@11||-41.5|40||||
+NMetal-1-Pin|pin@12||-38.5|-40||||
 AMetal-2|A|D5G5;|1|S0|PASO-B95@1|A_B95916|-18.5|-1|pin@5||-51|-1
+AMetal-1|GND|D5G5;|5|S0|PASO-B95@1|gnd|-9.5|-40|pin@12||-38.5|-40
 AMetal-2|SEL|D5G5;|1|S0|PASO-B95@1|sel_B95916|-19|-26.5|pin@6||-52.5|-26.5
 AMetal-2|SEL_B|D5G5;|1|S1800|PASO-B95@1|sel_b_B95916|20|28.5|pin@9||43|28.5
+AMetal-1|VDD|D5G5;|5|S0|PASO-B95@1|vdd|-9.5|40|pin@11||-41.5|40
 AMetal-2|Y|D5G5;|1|S1800|PASO-B95@1|Y_B95916|17|-1|pin@4||53|-1
 X
