@@ -1,0 +1,16 @@
+LTspice 24.0.12 for Windows
+Circuit: *** SPICE deck for cell A1_1{lay} from library IE0311-B95916-B63464-B94031-II2022
+Start Time: Tue Oct 29 19:00:51 2024
+c3: both pins shorted together -- ignoring.
+vgnd: both pins shorted together -- ignoring.
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Total elapsed time: 0.739 seconds.
+
