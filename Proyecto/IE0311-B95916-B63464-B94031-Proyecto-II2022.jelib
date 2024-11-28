@@ -985,18 +985,16 @@ Esel_b_B95916||D5G1;|sel_b_B95916|a|I
 X
 
 # Cell PASO_SIM_B95916;1{lay}
-CPASO_SIM_B95916;1{lay}||mocmos|1732215765875|1732364734931|
-IPASO-B95916;1{lay}|PASO-B95@1||-1.5|-2|||D5G4;
+CPASO_SIM_B95916;1{lay}||mocmos|1732215765875|1732833976542|
+IPASO-B95916;1{lay}|PASO-B95@2||-2|-2|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
-NMetal-2-Pin|pin@4||53|-1.5||||
-NMetal-2-Pin|pin@5||-51|-2||||
-NMetal-2-Pin|pin@6||-52.5|-29.5||||
-NMetal-2-Pin|pin@9||43|31||||
-Ngeneric:Invisible-Pin|pin@10||-74.5|23|||||SIM_spice_card(D5G1;)Stext
-NMetal-1-Pin|pin@11||-41.5|40||||
-NMetal-1-Pin|pin@12||-38.5|-40||||
-AMetal-2|A|D5G5;|1|S0|PASO-B95@1|A_B95916|-18.5|-2|pin@5||-51|-2
-AMetal-2|SEL|D5G5;|1|S0|PASO-B95@1|sel_B95916|-19|-29.5|pin@6||-52.5|-29.5
-AMetal-2|SEL_B|D5G5;|1|S1800|PASO-B95@1|sel_b_B95916|20|31|pin@9||43|31
-AMetal-2|Y|D5G5;|1|S1800|PASO-B95@1|Y_B95916|17|-1.5|pin@4||53|-1.5
+Ngeneric:Invisible-Pin|pin@10||-81.5|30.5|||||SIM_spice_card(D5G3;)S[.include spice.txt ; Importa el archivo con los parámetros del proceso ,Va A 0 PULSE(0 5 0 0.1n 0.1n 10n 20n)  * Señal A (entradas de datos),Vsel SEL 0 PULSE(0 5 0 0.1n 0.1n 20n 40n)  * Señal de selección sel,Vselb SEL_B 0 PULSE(5 0 0 0.1n 0.1n 20n 40n)  * Señal de selección sel_b (inversa de sel),* Configuración de la simulación,.tran 1n 100n,.end]
+NMetal-2-Pin|pin@13||-50|-30.5||||
+NMetal-2-Pin|pin@14||-53|-1.5||||
+NMetal-2-Pin|pin@15||48|-1.5||||
+NMetal-2-Pin|pin@16||59.5|32||||
+AMetal-2|A|D5G5;|1|S0|PASO-B95@2|A_B95916|-19|-1.5|pin@14||-53|-1.5
+AMetal-2|SEL|D5G5;|1|S0|PASO-B95@2|sel_B95916|-19.5|-30.5|pin@13||-50|-30.5
+AMetal-2|SEL_B|D5G5;|1|S1800|PASO-B95@2|sel_b_B95916|19.5|32|pin@16||59.5|32
+AMetal-2|Y|D5G5;|1|S1800|PASO-B95@2|Y_B95916|16.5|-1.5|pin@15||48|-1.5
 X
