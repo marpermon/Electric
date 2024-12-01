@@ -627,9 +627,26 @@ Eclk_b_B95916||D5G2;X-9;|clk_b_B95916|y|C1
 X
 
 # Cell LATCH_B95916_sim;1{lay}
-CLATCH_B95916_sim;1{lay}||mocmos|1732650211400|1732743400969|
-ILATCH_B95916;1{lay}|LATCH_B9@1||-93|42|||D5G4;
+CLATCH_B95916_sim;1{lay}||mocmos|1732650211400|1733015124665|
+ILATCH_B95916;1{lay}|LATCH_B9@1||-99|41|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-2-Pin|pin@0||199|35||||
+NMetal-2-Pin|pin@1||195|-6||||
+NMetal-2-Pin|pin@2||-64|-178||||
+NMetal-1-Pin|pin@3||-242|-70||||
+NMetal-1-Pin|pin@4||-147|-160||||
+NMetal-1-Pin|pin@5||-84|149||||
+Ngeneric:Invisible-Pin|pin@6||42|-248|||||SIM_spice_card(D5G15;)S[.include spice.txt,Vdd VDD 0 DC 5,Vgnd GND 0 DC 0,.trans 0 30ns,Vd D 0 PULSE 5 0 4ns 0.1ns 0.1ns 4.025ns 8.05ns,Vclk CLK  0 PULSE 0 5 7.5ns 0.1ns 0.1ns 7.325ns 15.05ns,Vclk_B CLK_B  0 PULSE 5 0 7.5ns 0.1ns 0.1ns 7.325ns 15.05ns]
+AMetal-2|net@0||1|S1800|LATCH_B9@1|Q_B95916|135|35|pin@0||199|35
+AMetal-2|net@1||1|S1800|LATCH_B9@1|clk_b_B95916|3|-6|pin@1||195|-6
+AMetal-2|net@2||1|S900|LATCH_B9@1|clk_B95917|-64|-106|pin@2||-64|-178
+AMetal-1|net@3||1|S0|LATCH_B9@1|D_B95916|-169.5|-70|pin@3||-242|-70
+AMetal-1|net@4||2|S900|LATCH_B9@1|vdd_1|-147|-109|pin@4||-147|-160
+AMetal-1|net@5||2|S2700|LATCH_B9@1|vdd|-84|87|pin@5||-84|149
+ED||D5G8;X-6;|pin@3||I
+EQ||D5G8;X57;Y-7;|LATCH_B9@1|Q_B95916|O
+Eclk||D5G8;Y-5;|pin@2||C
+Eclk_b||D5G8;X196;Y-7;|LATCH_B9@1|clk_b_B95916|C1
 X
 
 # Cell MUXNAND_B95916;1{ic}
