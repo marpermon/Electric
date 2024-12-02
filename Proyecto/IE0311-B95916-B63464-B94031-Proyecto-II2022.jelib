@@ -138,7 +138,7 @@ Eclk_b_B95916||D5G2;X-11;Y1;|pin@6||C1
 X
 
 # Cell LATCH_B95916;1{lay}
-CLATCH_B95916;1{lay}||mocmos|1732555428167|1733162229605||DRC_last_good_drc_area_date()G1732741548680|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1732741548680
+CLATCH_B95916;1{lay}||mocmos|1732555428167|1733165400539||DRC_last_good_drc_area_date()G1732741548680|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1732741548680
 IINV_20_10_B94031;1{lay}|INV_20_1@0||3|-6|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@1||224|-10|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@2||-46|-126|||D5G4;
@@ -200,6 +200,12 @@ NMetal-1-Pin|pin@164||-51|-179||||
 NMetal-1-Pin|pin@165||305|60||||
 NMetal-1-Pin|pin@166||305|-189||||
 NMetal-1-Pin|pin@167||250|-189||||
+NMetal-1-Pin|pin@168||152.25|34||||
+NMetal-1-Pin|pin@169||152.25|32||||
+NMetal-1-Pin|pin@170||94.25|-29||||
+NMetal-1-Pin|pin@171||94.25|-30.5||||
+NMetal-2-Pin|pin@172||104.75|-112||||
+NMetal-2-Pin|pin@173||104.75|-114||||
 AMetal-2|net@163||1|S900|pin@91||155|-3|pin@92||155|-120.5
 AMetal-1|net@185||1|S900|contact@42||180|-155|pin@108||180|-170
 AMetal-1|net@186||1|S0|pin@108||180|-170|pin@109||40|-170
@@ -226,11 +232,11 @@ AMetal-1|net@230||2|S1800|INV_20_1@0|vdd|-3|41|pin@144||30.5|41
 AMetal-1|net@231||1|S900|pin@111||30.5|60|pin@144||30.5|41
 AMetal-1|net@232||2|S1800|INV_20_1@0|gnd|-1|-39|pin@145||65|-39
 AMetal-1|net@233||1|S900|pin@127||65|-35.5|pin@145||65|-39
-AMetal-1|net@237||1|S0|PASO-B95@0|A_B95916|89|-6|INV_20_1@0|Y_B94031|20|-6
+AMetal-1|net@237||1|S0|PASO-B95@0|A_B95916|88|-6.75|INV_20_1@0|Y_B94031|20.5|-6.75
 AMetal-1|net@238||1|S2700|contact@41||101|-48|pin@146||101|-29
-AMetal-1|net@239||1|S1800|PASO-B95@0|sel_B95916|88|-29|pin@146||101|-29
-AMetal-1|net@240||1|S2700|PASO-B95@0|Y_B95916|123|7|pin@147||123|13
-AMetal-1|net@241||1|S900|PASO-B95@0|Y_B95916|123|7|contact@44||123|-3
+AMetal-1|net@239||1|S2700|pin@171||94.25|-30.5|pin@170||94.25|-29
+AMetal-1|net@240||1|S2700|PASO-B95@0|Y_B95916|123|5|pin@147||123|13
+AMetal-1|net@241||1|S900|PASO-B95@0|Y_B95916|123.25|5|contact@44||123.25|-3
 AMetal-2|net@242||1|S0|pin@91||155|-3|contact@44||123|-3
 AMetal-1|net@244||1|S2700|pin@106||179|13|pin@148||179|34
 AMetal-2|net@246||1|S900|pin@91||155|-3|pin@149||155|-5
@@ -242,12 +248,12 @@ AMetal-1|net@251||1|S1800|pin@111||30.5|60|pin@151||218|60
 AMetal-1|net@252||1|S1800|pin@151||218|60|pin@112||225|60
 AMetal-1|net@253||1|S900|pin@151||218|60|INV_20_1@1|vdd|218|37
 AMetal-2|net@255||1|S1800|PASO-B95@1|sel_b_B95916|57|-86|pin@89||100|-86
-AMetal-2|net@256||1|S1800|PASO-B95@1|Y_B95916|54|-112|pin@152||155|-112
+AMetal-2|net@256||1|S2700|pin@173||104.75|-114|pin@172||104.75|-112
 AMetal-2|net@257||1|S2700|pin@92||155|-120.5|pin@152||155|-112
-AMetal-1|net@258||1|S900|PASO-B95@1|sel_B95916|18|-148|pin@153||18|-170
+AMetal-1|net@258||1|S900|PASO-B95@1|sel_B95916|18|-149.5|pin@153||18|-170
 AMetal-1|net@259||1|S0|pin@110||34.5|-170|pin@153||18|-170
 AMetal-1|net@263||1|S1800|INV_20_1@2|Y_B94031|-29|-126|pin@155||19|-126
-AMetal-1|net@264||1|S900|PASO-B95@1|A_B95916|19|-125|pin@155||19|-126
+AMetal-1|net@264||1|S2700|PASO-B95@1|A_B95916|19|-126.5|pin@155||19|-126
 AMetal-1|net@265||1|S1800|pin@117||-120|-45|pin@156||-52|-45
 AMetal-1|net@266||1|S1800|pin@156||-52|-45|pin@118||-35|-45
 AMetal-1|net@267||1|S900|pin@156||-52|-45|INV_20_1@2|vdd|-52|-79
@@ -255,7 +261,7 @@ AMetal-1|net@269||2|S1800|INV_20_1@2|gnd|-50|-159|pin@157||-40|-159
 AMetal-2|net@270||1|S900|contact@41||100|-48|pin@158||100|-78
 AMetal-2|net@271||1|S900|pin@158||100|-78|pin@89||100|-86
 AMetal-2|net@272||1|S1800|pin@158||100|-78|pin@159||116|-78
-AMetal-1|net@273||1|S1800|PASO-B95@0|sel_b_B95916|126|34|pin@160||178|34
+AMetal-1|net@273||1|S2700|pin@169||152.25|32|pin@168||152.25|34
 AMetal-1|net@274||1|S1800|pin@160||178|34|pin@148||179|34
 AMetal-1|net@275||1|S2700|pin@160||178|34|pin@161||178|48
 AMetal-1|net@276||1|S0|INV_20_1@2|A_B94031|-51|-120|pin@162||-85|-120
@@ -266,6 +272,12 @@ AMetal-1|net@280||1|S1800|pin@112||225|60|pin@165||305|60
 AMetal-1|net@281||1|S900|pin@165||305|60|pin@166||305|-189
 AMetal-1|net@282||1|S0|pin@166||305|-189|pin@167||250|-189
 AMetal-1|net@283||1|S2700|pin@115||250|-195|pin@167||250|-189
+AMetal-1|net@284||1|S1800|PASO-B95@0|sel_b_B95916|126.5|32|pin@169||152.25|32
+AMetal-1|net@285||1|S1800|pin@168||152.25|34|pin@160||178|34
+AMetal-1|net@286||1|S1800|PASO-B95@0|sel_B95916|87.5|-30.5|pin@171||94.25|-30.5
+AMetal-1|net@287||1|S1800|pin@170||94.25|-29|pin@146||101|-29
+AMetal-2|net@288||1|S1800|PASO-B95@1|Y_B95916|54.5|-114|pin@173||104.75|-114
+AMetal-2|net@289||1|S1800|pin@172||104.75|-112|pin@152||155|-112
 ED_B95916||D5G2;|pin@162||I
 EQ_B94031||D5G5;X34;Y-2;|INV_20_1@1|Y_B94031|O
 Eclk_B95916||D5G5;X-1;Y5;|pin@161||C
@@ -402,33 +414,33 @@ EVDD||D5G6;|pin@11||P
 X
 
 # Cell MUXNAND_B95916;1{ic}
-CMUXNAND_B95916;1{ic}||artwork|1731972574705|1731972900798|E
+CMUXNAND_B95916;1{ic}||artwork|1731972574705|1733169600003|E
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NBox|art@1||0|-0.5|6|12||
 Nschematic:Bus_Pin|pin@0||-5|3||||
 Nschematic:Wire_Pin|pin@1||-3|3||||
 Nschematic:Bus_Pin|pin@2||-5|0.5||||
 Nschematic:Wire_Pin|pin@3||-3|0.5||||
-Nschematic:Bus_Pin|pin@4||-5|-4||||
-Nschematic:Wire_Pin|pin@5||-3|-4||||
-Nschematic:Bus_Pin|pin@6||-5|-1.5||||
-Nschematic:Wire_Pin|pin@7||-3|-1.5||||
 Nschematic:Bus_Pin|pin@8||5|0||||
 Nschematic:Wire_Pin|pin@9||3|0||||
+Nschematic:Bus_Pin|pin@10||-5|-2||||
+Nschematic:Wire_Pin|pin@11||-3|-2||||
+Nschematic:Bus_Pin|pin@12||-5|-5||||
+Nschematic:Wire_Pin|pin@13||-3|-5||||
 Aschematic:wire|net@0|||0|pin@1||-3|3|pin@0||-5|3
 Aschematic:wire|net@1|||0|pin@3||-3|0.5|pin@2||-5|0.5
-Aschematic:wire|net@2|||0|pin@5||-3|-4|pin@4||-5|-4
-Aschematic:wire|net@3|||0|pin@7||-3|-1.5|pin@6||-5|-1.5
 Aschematic:wire|net@4|||1800|pin@9||3|0|pin@8||5|0
+Aschematic:wire|net@5|||0|pin@11||-3|-2|pin@10||-5|-2
+Aschematic:wire|net@6|||0|pin@13||-3|-5|pin@12||-5|-5
 EA_B95916||D5G2;X-5;|pin@0||I
 EB_B95916||D5G2;X-5;|pin@2||I
-ESNOT_B95916||D5G2;X-7;|pin@4||I
-ES_B95916||D5G2;X-5;Y-0.5;|pin@6||I
-EY_B95916||D5G2;X7;|pin@8||O
+ESEL_B_B95916|SEL_B95916|D5G2;X-7;|pin@12||I
+ESEL_B95916|SEL_B_B95917|D5G2;X-7;|pin@10||I
+EY_B95916||D5G2;X5;|pin@8||O
 X
 
 # Cell MUXNAND_B95916;1{lay}
-CMUXNAND_B95916;1{lay}||mocmos|1731972970223|1733115708918||DRC_last_good_drc_area_date()G1733114880846|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1733114880846
+CMUXNAND_B95916;1{lay}||mocmos|1731972970223|1733169631440||DRC_last_good_drc_area_date()G1733170020633|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1733170020633
 INAND2_10_10_B95916;1{lay}|NAND2_10@0||-25.5|39.5|||D5G4;
 INAND2_10_10_B95916;1{lay}|NAND2_10@1||8.5|39.5|||D5G4;
 INAND2_10_10_B95916;1{lay}|NAND2_10@2||52|39.5|X||D5G4;
@@ -443,12 +455,12 @@ NMetal-2-Pin|pin@6||80|47||||
 NMetal-2-Pin|pin@7||83|36.5||||
 NMetal-1-Pin|pin@8||-66.5|79.5||||
 NMetal-1-Pin|pin@9||-68.5|-0.5||||
-Ngeneric:Invisible-Pin|pin@10||-119|47.5|||||SIM_spice_card(D5G3;)S[.include spice.txt ; Importa el archivo con los parámetros del proceso,"VVDD VDD 0 DC 5 ; Creamos la tensión Vds, A 5V",VGND GND 0 DC 0 ; Creamos el nodo de tierra que está a 0v  ,Va A 0 PULSE(0 5 0 0.1n 0.1n 10n 20n)  * Señal A (entradas de datos),Vsel SEL 0 DC 5;,Vselb SEL_B 0 DC 0;,* Configuración de la simulación,.tran 1n 50n,.end]
+Ngeneric:Invisible-Pin|pin@10||-119|47.5|||||SIM_spice_card(D5G3;)S[.include spice.txt ; Importa el archivo con los parámetros del proceso,"VVDD VDD 0 DC 5 ; Creamos la tensión Vds, A 5V",VGND GND 0 DC 0 ; Creamos el nodo de tierra que está a 0v  ,Va A 0 PULSE(0 5 0 0.1n 0.1n 10n 20n)  * Señal A (entradas de datos),Vsel SEL 0 PULSE(0 5 0 0.1n 0.1n 25n 50n) ;,Vselb SEL_B 0 PULSE(5 0 0 0.1n 0.1n 25n 50n) ;,Vb B 0 DC 5;,* Configuración de la simulación,.tran 1n 50n,.end]
 AMetal-2|A|D5G5;|1|S0|NAND2_10@0|A_B95916|-37.5|36.5|pin@4||-69|36.5
 AMetal-2|B|D5G5;|1|S1800|NAND2_10@2|A_B95916|63|36.5|pin@7||83|36.5
 AMetal-1|GND|D5G5;|5|S0|NAND2_10@0|gnd|-37.25|-0.5|pin@9||-68.5|-0.5
-AMetal-2|SEL|D5G5;X13.5;|1|S1800|NAND2_10@2|B_B95916|38.5|47|pin@6||80|47
-AMetal-2|SEL_B|D5G5;X-10;|1|S0|NAND2_10@0|B_B95916|-12|47|pin@5||-53.5|47
+AMetal-2|SEL|D5G5;X-10;|1|S0|NAND2_10@0|B_B95916|-12|47|pin@5||-53.5|47
+AMetal-2|SEL_B|D5G5;X13.5;|1|S1800|NAND2_10@2|B_B95916|38.5|47|pin@6||80|47
 AMetal-1|VDD|D5G5;|5|S0|NAND2_10@0|vdd|-35.5|79.5|pin@8||-66.5|79.5
 AMetal-2|Y|D5G5;|1|S900|NAND2_10@1|Y_B95916|21|30|pin@3||21|16.5
 AMetal-1|net@1||5|S1800|NAND2_10@0|gnd|-37.25|-0.5|NAND2_10@1|gnd|-3.25|-0.5
@@ -463,15 +475,15 @@ AMetal-2|net@11||1|S0|NAND2_10@2|Y_B95916|39.5|29.5|pin@2||28|29.5
 X
 
 # Cell MUXNAND_B95916;1{sch}
-CMUXNAND_B95916;1{sch}||schematic|1731970089182|1732846108052|
+CMUXNAND_B95916;1{sch}||schematic|1731970089182|1733169580221|
 NOff-Page|A_B95916|D5G1.5;X-6;|-23.5|3||||
 NOff-Page|B_B95916|D5G1.5;X-7;|-23.5|-6||||
 IMUXNAND_B95916;1{ic}|MUXNAND_@0||15.5|12|||D5G4;
 INAND2_10_10_B95916;1{ic}|NAND2_10@1||-11.5|3|||D5G4;
 INAND2_10_10_B95916;1{ic}|NAND2_10@2||-11.5|-6|||D5G4;
 INAND2_10_10_B95916;1{ic}|NAND2_10@3||2.5|-1.5|||D5G4;
-NOff-Page|SNOT_B95916|D5G1.5;X-7.5;|-23.5|-4||||
-NOff-Page|S_B95916|D5G1.5;X-6;|-23.5|5||||
+NOff-Page|SEL_B95916|D5G1.5;X-6;|-23.5|5||||
+NOff-Page|SEL_B_B95916|D5G1.5;X-7.5;|-23.5|-4||||
 NOff-Page|Y_B95916|D5G1.5;Y2;|13.5|-0.5|||X|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NWire_Pin|pin@0||-5.5|0.5||||
@@ -482,11 +494,16 @@ Awire|net@1|||0|NAND2_10@3|A_B95916|-5.5|0.5|pin@0||-5.5|0.5
 Awire|net@2|||1800|NAND2_10@2|Y_B95916|-5.5|-5|pin@1||-5.5|-5
 Awire|net@3|||900|NAND2_10@3|B_B95916|-5.5|-1.5|pin@1||-5.5|-5
 Awire|net@5|||900|NAND2_10@1|A_B95916|-19.5|5|pin@2||-19.5|5
-Awire|net@6|||1800|S_B95916|y|-21.5|5|NAND2_10@1|A_B95916|-19.5|5
+Awire|net@6|||1800|SEL_B95916|y|-21.5|5|NAND2_10@1|A_B95916|-19.5|5
 Awire|net@7|||1800|A_B95916|y|-21.5|3|NAND2_10@1|B_B95916|-19.5|3
-Awire|net@8|||1800|SNOT_B95916|y|-21.5|-4|NAND2_10@2|A_B95916|-19.5|-4
+Awire|net@8|||1800|SEL_B_B95916|y|-21.5|-4|NAND2_10@2|A_B95916|-19.5|-4
 Awire|net@9|||1800|B_B95916|y|-21.5|-6|NAND2_10@2|B_B95916|-19.5|-6
 Awire|net@10|||0|Y_B95916|y|11.5|-0.5|NAND2_10@3|Y_B95916|8.5|-0.5
+EA_B95916||D5G1;|A_B95916|y|I
+EB_B95916||D5G1;|B_B95916|y|I
+ESEL_B_B95916|SEL_B95916|D5G1;|SEL_B_B95916|y|I
+ESEL_B95916|SEL_B_B95917|D5G1;X4;|SEL_B95916|a|I
+EY_B95916||D5G1;|Y_B95916|a|O
 X
 
 # Cell MUXTRANS_B95916;1{ic}
@@ -517,24 +534,24 @@ EY_B95916||D5G2;X9.5;|pin@8||O
 X
 
 # Cell MUXTRANS_B95916;1{lay}
-CMUXTRANS_B95916;1{lay}||mocmos|1732846132787|1733163488106||DRC_last_good_drc_area_date()G1733115736709|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1733115736709
+CMUXTRANS_B95916;1{lay}||mocmos|1732846132787|1733177019888||DRC_last_good_drc_area_date()G1733165872869|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1733165872869
 IPASO-B95916;1{lay}|PASO-B95@0||-62.5|6.5|||D5G4;
 IPASO-B95916;1{lay}|PASO-B95@1||-18|6.5|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
-NMetal-2-Pin|pin@0||-108|0||||
-NMetal-2-Pin|pin@1||-51|0||||
-NMetal-2-Pin|pin@3||-97.5|39.5||||
-NMetal-2-Pin|pin@4||-106|-23||||
-NMetal-2-Pin|pin@5||20|12.5||||
-Ngeneric:Invisible-Pin|pin@6||-156.5|63.5|||||SIM_spice_card(D5G3;)S[.include spice.txt ; Importa el archivo con los parámetros del proceso,"VVDD VDD 0 DC 5 ; Creamos la tensión Vds, A 5V",VGND GND 0 DC 0 ; Creamos el nodo de tierra que está a 0v  ,Va A 0 PULSE(0 5 0 0.1n 0.1n 10n 20n)  * Señal A (entradas de datos),Vsel SEL 0 PULSE(0 5 0 0.1n 0.1n 25n 50n) ;,Vselb SEL_B 0 PULSE(5 0 0 0.1n 0.1n 25n 50n) ;,Vb B 0 DC 5;,* Configuración de la simulación,.tran 1n 50n,.end]
-AMetal-2|A|D5G5;|1|S0|PASO-B95@0|A_B95916|-79.5|0|pin@0||-108|0
-AMetal-2|B|D5G5;|1|S0|PASO-B95@1|A_B95916|-35|0|pin@1||-51|0
-AMetal-2|SEL|D5G5;|1|S0|PASO-B95@0|sel_B95916|-80|-23|pin@4||-106|-23
-AMetal-2|SEL_B|D5G5;X-21.5;|1|S0|PASO-B95@0|sel_b_B95916|-41|39.5|pin@3||-97.5|39.5
-AMetal-2|Y|D5G5;|1|S1800|PASO-B95@1|Y_B95916|0.5|12.5|pin@5||20|12.5
-AMetal-2|net@1||1|S1800|PASO-B95@0|sel_B95916|-80|-23|PASO-B95@1|sel_B95916|-35.5|-23
-AMetal-2|net@2||1|S1800|PASO-B95@0|Y_B95916|-44|12.5|PASO-B95@1|Y_B95916|0.5|12.5
-AMetal-2|net@3||1|S1800|PASO-B95@0|sel_b_B95916|-41|39.5|PASO-B95@1|sel_b_B95916|3.5|39.5
+NMetal-2-Pin|pin@0||-108|-1||||
+NMetal-2-Pin|pin@1||-51|-1||||
+NMetal-2-Pin|pin@3||-97.5|38.5||||
+NMetal-2-Pin|pin@4||-106|-24||||
+NMetal-2-Pin|pin@5||20|11.5||||
+Ngeneric:Invisible-Pin|pin@6||-203.5|24.5|||||SIM_spice_card(D5G3;)S[.include spice.txt ; Importa el archivo con los parámetros del proceso,"VVDD VDD 0 DC 5 ; Creamos la tensión Vds, A 5V",VGND GND 0 DC 0 ; Creamos el nodo de tierra que está a 0v  ,Va A 0 PULSE(0 5 0 0.1n 0.1n 10n 20n)  * Señal A (entradas de datos),Vsel SEL 0 PULSE(0 5 0 0.1n 0.1n 50n 100n) ;,Vselb SEL_B 0 PULSE(5 0 0 0.1n 0.1n 50n 100n) ;,Vb B 0 DC 5;,.MEAS t_rise time TRIG V(A)=2.5 RISE=1 TD=5n TARG V(Y)=2.5 RISE=1,.MEAS t_fall time TRIG V(A)=2.5 FALL=1 TD=5n TARG V(Y)=2.5 FALL=1,* TD para que se salte la primer conmutacion,* Configuración de la simulación,.tran 1n 100n,.end]
+AMetal-2|A|D5G5;|1|S0|PASO-B95@0|A_B95916|-79.5|-1|pin@0||-108|-1
+AMetal-2|B|D5G5;|1|S0|PASO-B95@1|A_B95916|-35|-1|pin@1||-51|-1
+AMetal-2|SEL|D5G5;|1|S0|PASO-B95@0|sel_B95916|-80|-24|pin@4||-106|-24
+AMetal-2|SEL_B|D5G5;X-21.5;|1|S0|PASO-B95@0|sel_b_B95916|-41|38.5|pin@3||-97.5|38.5
+AMetal-2|Y|D5G5;|1|S1800|PASO-B95@1|Y_B95916|0.5|11.5|pin@5||20|11.5
+AMetal-2|net@1||1|S1800|PASO-B95@0|sel_B95916|-80|-24|PASO-B95@1|sel_B95916|-35.5|-24
+AMetal-2|net@2||1|S1800|PASO-B95@0|Y_B95916|-44|11.5|PASO-B95@1|Y_B95916|0.5|11.5
+AMetal-2|net@3||1|S1800|PASO-B95@0|sel_b_B95916|-41|38.5|PASO-B95@1|sel_b_B95916|3.5|38.5
 X
 
 # Cell MUXTRANS_B95916;1{sch}
