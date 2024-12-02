@@ -1,0 +1,43 @@
+Circuit: *** SPICE deck for cell flip_flop_SIM_B63464{lay} from library IE0311-B95916-B63464-B94031-Proyecto-II2022
+
+C3: both pins shorted together -- ignoring.
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+WARNING: Node FLIP_FLO@0:NET@137 is floating.
+WARNING: Node FLIP_FLO@0:NET@144 is floating.
+WARNING: Node FLIP_FLO@0:NET@2 is floating.
+WARNING: Node FLIP_FLO@0:NET@1 is floating.
+WARNING: Node FLIP_FLO@0:NET@330 is floating.
+WARNING: Node FLIP_FLO@0:NET@337 is floating.
+WARNING: Node FLIP_FLO@0:NET@195 is floating.
+WARNING: Node FLIP_FLO@0:NET@194 is floating.
+
+WARNING: Less than two connections to node FLIP_FLO@0:NET@137.  This node is used by C:FLIP_FLO@0:32.
+WARNING: Less than two connections to node FLIP_FLO@0:NET@144.  This node is used by C:FLIP_FLO@0:33.
+WARNING: Less than two connections to node FLIP_FLO@0:NET@2.  This node is used by C:FLIP_FLO@0:36.
+WARNING: Less than two connections to node FLIP_FLO@0:NET@1.  This node is used by C:FLIP_FLO@0:37.
+WARNING: Less than two connections to node FLIP_FLO@0:NET@330.  This node is used by C:FLIP_FLO@0:43.
+WARNING: Less than two connections to node FLIP_FLO@0:NET@337.  This node is used by C:FLIP_FLO@0:44.
+WARNING: Less than two connections to node FLIP_FLO@0:NET@195.  This node is used by C:FLIP_FLO@0:47.
+WARNING: Less than two connections to node FLIP_FLO@0:NET@194.  This node is used by C:FLIP_FLO@0:48.
+Direct Newton iteration for .op point succeeded.
+
+Date: Sun Dec 01 22:51:40 2024
+Total elapsed time: 0.781 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2505
+traniter = 2477
+tranpoints = 1220
+accept = 1180
+rejected = 40
+matrix size = 160
+fillins = 302
+solver = Normal
+Matrix Compiler1: 25.81 KB object code size  26.3/12.6/[8.3]
+Matrix Compiler2: 17.72 KB object code size  7.1/9.8/[4.0]
+
