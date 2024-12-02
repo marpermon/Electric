@@ -1,7 +1,7 @@
 *** SPICE deck for cell PASO_SIM_B95916{lay} from library IE0311-B95916-B63464-B94031-Proyecto-II2022
-*** Created on jue nov 21, 2024 13:02:45
-*** Last revised on jue nov 28, 2024 16:46:16
-*** Written on jue nov 28, 2024 16:46:39 by Electric VLSI Design System, version 9.07
+*** Created on Thu Nov 21, 2024 13:02:45
+*** Last revised on Mon Dec 02, 2024 10:51:44
+*** Written on Mon Dec 02, 2024 10:51:51 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 ***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
@@ -68,9 +68,9 @@ C3 SEL_B 0 2.098fF
 * Spice Code nodes in cell cell 'PASO_SIM_B95916{lay}'
 .include spice.txt ; Importa el archivo con los parámetros del proceso 
 Va A 0 PULSE(0 5 0 0.1n 0.1n 10n 20n)  * Señal A (entradas de datos)
-Vsel SEL 0 PULSE(0 5 0 0.1n 0.1n 20n 40n)  * Señal de selección sel
-Vselb SEL_B 0 PULSE(5 0 0 0.1n 0.1n 20n 40n)  * Señal de selección sel_b (inversa de sel)
+Vsel SEL 0 PULSE(0 5 0 0.1n 0.1n 15n 30n)  * Señal de selección sel
+Vselb SEL_B 0 PULSE(5 0 0 0.1n 0.1n 15n 30n)  * Señal de selección sel_b (inversa de sel)
 * Configuración de la simulación
-.tran 1n 100n
+.tran 1n 70n
 .end
 .END
