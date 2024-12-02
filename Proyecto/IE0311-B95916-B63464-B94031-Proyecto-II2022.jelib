@@ -138,7 +138,7 @@ Eclk_b_B95916||D5G2;X-11;Y1;|pin@6||C1
 X
 
 # Cell LATCH_B95916;1{lay}
-CLATCH_B95916;1{lay}||mocmos|1732555428167|1733160825806||DRC_last_good_drc_area_date()G1732741548680|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1732741548680
+CLATCH_B95916;1{lay}||mocmos|1732555428167|1733162229605||DRC_last_good_drc_area_date()G1732741548680|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1732741548680
 IINV_20_10_B94031;1{lay}|INV_20_1@0||3|-6|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@1||224|-10|||D5G4;
 IINV_20_10_B94031;1{lay}|INV_20_1@2||-46|-126|||D5G4;
@@ -197,6 +197,9 @@ NMetal-1-Pin|pin@161||178|48||||
 NMetal-1-Pin|pin@162||-85|-120||||
 NMetal-1-Pin|pin@163||-40|-179||||
 NMetal-1-Pin|pin@164||-51|-179||||
+NMetal-1-Pin|pin@165||305|60||||
+NMetal-1-Pin|pin@166||305|-189||||
+NMetal-1-Pin|pin@167||250|-189||||
 AMetal-2|net@163||1|S900|pin@91||155|-3|pin@92||155|-120.5
 AMetal-1|net@185||1|S900|contact@42||180|-155|pin@108||180|-170
 AMetal-1|net@186||1|S0|pin@108||180|-170|pin@109||40|-170
@@ -259,6 +262,10 @@ AMetal-1|net@276||1|S0|INV_20_1@2|A_B94031|-51|-120|pin@162||-85|-120
 AMetal-1|net@277||1|S2700|pin@134||-40|-180|pin@163||-40|-179
 AMetal-1|net@278||1|S2700|pin@163||-40|-179|pin@157||-40|-159
 AMetal-1|net@279||1|S0|pin@163||-40|-179|pin@164||-51|-179
+AMetal-1|net@280||1|S1800|pin@112||225|60|pin@165||305|60
+AMetal-1|net@281||1|S900|pin@165||305|60|pin@166||305|-189
+AMetal-1|net@282||1|S0|pin@166||305|-189|pin@167||250|-189
+AMetal-1|net@283||1|S2700|pin@115||250|-195|pin@167||250|-189
 ED_B95916||D5G2;|pin@162||I
 EQ_B94031||D5G5;X34;Y-2;|INV_20_1@1|Y_B94031|O
 Eclk_B95916||D5G5;X-1;Y5;|pin@161||C
