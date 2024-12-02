@@ -738,7 +738,7 @@ Awire|net@10|||0|Y_B95916|y|11.5|-0.5|NAND2_10@3|Y_B95916|8.5|-0.5
 X
 
 # Cell MUXTRANS_B95916;1{ic}
-CMUXTRANS_B95916;1{ic}||artwork|1732846155617|1732851957721|E
+CMUXTRANS_B95916;1{ic}||artwork|1732846155617|1733164852079|E
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NBox|art@1||0|0|10|20||
 Nschematic:Bus_Pin|pin@0||-9.5|2||||
@@ -759,13 +759,13 @@ Aschematic:wire|net@4|||0|pin@9||9.5|0|pin@8||5|0
 Aschematic:wire|net@8|||1800|pin@10||-9.5|5.5|pin@11||-5|5.5
 EA_B95916||D5G2;X-6;|pin@6||I
 Eb_B95916|B_B95916|D5G2;X-6;Y0.5;|pin@2||I
-ESNOT_B95916||D5G2;X-6.5;Y-8.5;|pin@4||I
-ES_B95916||D5G2;X-6;|pin@0||I
+ES_B95916|SEL_B95916|D5G2;X-6;|pin@0||I
+ESNOT_B95916|SEL_B_B95916|D5G2;X-6.5;Y-8.5;|pin@4||I
 EY_B95916||D5G2;X9.5;|pin@8||O
 X
 
 # Cell MUXTRANS_B95916;1{lay}
-CMUXTRANS_B95916;1{lay}||mocmos|1732846132787|1733157333521||DRC_last_good_drc_area_date()G1733115736709|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1733115736709
+CMUXTRANS_B95916;1{lay}||mocmos|1732846132787|1733163488106||DRC_last_good_drc_area_date()G1733115736709|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1733115736709
 IPASO-B95916;1{lay}|PASO-B95@0||-62.5|6.5|||D5G4;
 IPASO-B95916;1{lay}|PASO-B95@1||-18|6.5|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
@@ -774,7 +774,7 @@ NMetal-2-Pin|pin@1||-51|0||||
 NMetal-2-Pin|pin@3||-97.5|39.5||||
 NMetal-2-Pin|pin@4||-106|-23||||
 NMetal-2-Pin|pin@5||20|12.5||||
-Ngeneric:Invisible-Pin|pin@6||-171.5|23.5|||||SIM_spice_card(D5G3;)S[.include spice.txt ; Importa el archivo con los parámetros del proceso,"VVDD VDD 0 DC 5 ; Creamos la tensión Vds, A 5V",VGND GND 0 DC 0 ; Creamos el nodo de tierra que está a 0v  ,Va A 0 PULSE(0 5 0 0.1n 0.1n 10n 20n)  * Señal A (entradas de datos),Vsel SEL 0 DC 5;,Vselb SEL_B 0 DC 0;,* Configuración de la simulación,.tran 1n 50n,.end]
+Ngeneric:Invisible-Pin|pin@6||-156.5|63.5|||||SIM_spice_card(D5G3;)S[.include spice.txt ; Importa el archivo con los parámetros del proceso,"VVDD VDD 0 DC 5 ; Creamos la tensión Vds, A 5V",VGND GND 0 DC 0 ; Creamos el nodo de tierra que está a 0v  ,Va A 0 PULSE(0 5 0 0.1n 0.1n 10n 20n)  * Señal A (entradas de datos),Vsel SEL 0 PULSE(0 5 0 0.1n 0.1n 25n 50n) ;,Vselb SEL_B 0 PULSE(5 0 0 0.1n 0.1n 25n 50n) ;,Vb B 0 DC 5;,* Configuración de la simulación,.tran 1n 50n,.end]
 AMetal-2|A|D5G5;|1|S0|PASO-B95@0|A_B95916|-79.5|0|pin@0||-108|0
 AMetal-2|B|D5G5;|1|S0|PASO-B95@1|A_B95916|-35|0|pin@1||-51|0
 AMetal-2|SEL|D5G5;|1|S0|PASO-B95@0|sel_B95916|-80|-23|pin@4||-106|-23
@@ -786,14 +786,14 @@ AMetal-2|net@3||1|S1800|PASO-B95@0|sel_b_B95916|-41|39.5|PASO-B95@1|sel_b_B95916
 X
 
 # Cell MUXTRANS_B95916;1{sch}
-CMUXTRANS_B95916;1{sch}||schematic|1732840015679|1732852001970|
+CMUXTRANS_B95916;1{sch}||schematic|1732840015679|1733164855505|
 NOff-Page|A_B95916|D5G1;X5.5;|-14|-11||||
 NOff-Page|B_B95916|D5G1;X5.5;|-13.5|12.5||||
 IMUXTRANS_B95916;1{ic}|MUXTRANS@0||42.5|20|||D5G4;
 IPASO-B95916;1{ic}|PASO-B95@1||0|-11|||D5G4;
 IPASO-B95916;1{ic}|PASO-B95@2||0|12.5|Y||D5G4;
-NOff-Page|SNOT_B95916|D5G2;X-2;|-6|0||||
-NOff-Page|S_B95916|D5G1;X5.5;|-36.5|0||||
+NOff-Page|SEL_B95916|D5G1;X5.5;|-36.5|0||||
+NOff-Page|SEL_B_B95916|D5G2;X-2;|-6|0||||
 NOff-Page|Y_B95916|D5G2;|24.5|0|||X|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NWire_Pin|pin@0||0|27.5||||
@@ -823,15 +823,15 @@ Awire|net@17|||1800|A_B95916|y|-12|-11|pin@6||-11|-11
 Awire|net@19|||1800|B_B95916|y|-11.5|12.5|PASO-B95@2|A|-5|12.5
 Awire|net@20|||900|PASO-B95@2|sel_b_B95916|0|11|pin@11||0|0
 Awire|net@21|||900|pin@11||0|0|PASO-B95@1|sel_b_B95916|0|-9.5
-Awire|net@22|||1800|SNOT_B95916|y|-4|0|pin@11||0|0
+Awire|net@22|||1800|SEL_B_B95916|y|-4|0|pin@11||0|0
 Awire|net@23|||0|Y_B95916|y|22.5|0|pin@10||20.5|0
 Awire|net@28|||900|pin@1||-26|27.5|pin@13||-26|0
 Awire|net@29|||900|pin@13||-26|0|pin@2||-26|-28.5
-Awire|net@30|||1800|S_B95916|y|-34.5|0|pin@13||-26|0
+Awire|net@30|||1800|SEL_B95916|y|-34.5|0|pin@13||-26|0
 EA_B95916||D5G2;|A_B95916|a|I
 Eb_B95916|B_B95916|D5G2;|B_B95916|a|I
-ESNOT_B95916||D5G1;X10.5;|SNOT_B95916|a|I
-ES_B95916||D5G2;|S_B95916|a|I
+ES_B95916|SEL_B95916|D5G2;|SEL_B95916|a|I
+ESNOT_B95916|SEL_B_B95916|D5G1;X11.5;|SEL_B_B95916|a|I
 EY_B95916||D5G1;X-5;|Y_B95916|a|O
 X
 
