@@ -1,7 +1,8 @@
 *** SPICE deck for cell MUXNAND_B95916{lay} from library IE0311-B95916-B63464-B94031-Proyecto-II2022
-*** Created on Mon Nov 18, 2024 17:36:10
-*** Last revised on Mon Dec 02, 2024 14:00:31
-*** Written on Mon Dec 02, 2024 14:01:04 by Electric VLSI Design System, version 9.07
+*** Created on lun nov 18, 2024 17:36:10
+*** Last revised on lun dic 02, 2024 20:08:46
+*** Written on lun dic 02, 2024 20:08:59 by Electric VLSI Design System, version 9.07
+43eb55d78cb0a4e55a70f5103d6da0865332c910
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 ***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
@@ -90,10 +91,14 @@ C8 SEL_B 0 2.177fF
 VVDD VDD 0 DC 5 ; Creamos la tensión Vds, A 5V
 VGND GND 0 DC 0 ; Creamos el nodo de tierra que está a 0v  
 Va A 0 PULSE(0 5 0 0.1n 0.1n 10n 20n)  * Señal A (entradas de datos)
-Vsel SEL 0 PULSE(0 5 0 0.1n 0.1n 25n 50n) ;
-Vselb SEL_B 0 PULSE(5 0 0 0.1n 0.1n 25n 50n) ;
+Vsel SEL 0 PULSE(0 5 0 0.1n 0.1n 50n 100n) ;
+Vselb SEL_B 0 PULSE(5 0 0 0.1n 0.1n 50n 100n) ;
 Vb B 0 DC 5;
+.MEAS t_rise time TRIG V(A)=2.5 RISE=1 TD=5n TARG V(Y)=2.5 RISE=1 TD=5n 
+.MEAS t_fall time TRIG V(A)=2.5 FALL=1 TD=5n TARG V(Y)=2.5 FALL=1 TD=5n
+* TD para que se salte la primer conmutacion
 * Configuración de la simulación
-.tran 1n 50n
+.tran 1n 100n
+43eb55d78cb0a4e55a70f5103d6da0865332c910
 .end
 .END
