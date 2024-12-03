@@ -1,7 +1,7 @@
 *** SPICE deck for cell flip_flop_SIM_B63464{lay} from library IE0311-B95916-B63464-B94031-Proyecto-II2022
 *** Created on Sat Nov 30, 2024 18:54:01
-*** Last revised on Sun Dec 01, 2024 22:08:34
-*** Written on Sun Dec 01, 2024 22:51:15 by Electric VLSI Design System, version 9.07
+*** Last revised on Mon Dec 02, 2024 19:00:28
+*** Written on Mon Dec 02, 2024 19:00:38 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 ***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
@@ -24,270 +24,140 @@
 ***    Metal-6:	areacap=0.0423FF/um^2,	edgecap=0.1273FF/um,	res=0.036ohms/sq
 ***    Hi-Res:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
 
+*** SUBCIRCUIT IE0311-B95916-B63464-B94031-Proyecto-II2022__INV_20_10_B94031 FROM CELL INV_20_10_B94031{lay}
+.SUBCKT IE0311-B95916-B63464-B94031-Proyecto-II2022__INV_20_10_B94031 A_B94031 gnd vdd Y_B94031
+Mnmos@0 Y_B94031 A_B94031#0nmos@0_poly-right gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=5.61P PS=23U PD=16.7U
+Mpmos@0 Y_B94031 A_B94031#4pmos@0_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=5.61P PS=30U PD=16.7U
+** Extracted Parasitic Capacitors ***
+C0 Y_B94031 0 2.889fF
+C1 A_B94031 0 0.261fF
+C2 A_B94031#0nmos@0_poly-right 0 0.105fF
+C3 A_B94031#5pin@36_polysilicon-1 0 0.284fF
+** Extracted Parasitic Resistors ***
+R0 A_B94031#4pmos@0_poly-left A_B94031#4pmos@0_poly-left##0 7.233
+R1 A_B94031#4pmos@0_poly-left##0 A_B94031#4pmos@0_poly-left##1 7.233
+R2 A_B94031#4pmos@0_poly-left##1 A_B94031#5pin@36_polysilicon-1 7.233
+R3 A_B94031#5pin@36_polysilicon-1 A_B94031#5pin@36_polysilicon-1##0 8.99
+R4 A_B94031#5pin@36_polysilicon-1##0 A_B94031#5pin@36_polysilicon-1##1 8.99
+R5 A_B94031#5pin@36_polysilicon-1##1 A_B94031#5pin@36_polysilicon-1##2 8.99
+R6 A_B94031#5pin@36_polysilicon-1##2 A_B94031#5pin@36_polysilicon-1##3 8.99
+R7 A_B94031#5pin@36_polysilicon-1##3 A_B94031#0nmos@0_poly-right 8.99
+R8 A_B94031 A_B94031#5pin@36_polysilicon-1 6.2
+.ENDS IE0311-B95916-B63464-B94031-Proyecto-II2022__INV_20_10_B94031
+*** WARNING: no power connection for P-transistor wells in cell 'PASO-B95916{lay}'
+*** WARNING: no ground connection for N-transistor wells in cell 'PASO-B95916{lay}'
+
+*** SUBCIRCUIT IE0311-B95916-B63464-B94031-Proyecto-II2022__PASO-B95916 FROM CELL PASO-B95916{lay}
+.SUBCKT IE0311-B95916-B63464-B94031-Proyecto-II2022__PASO-B95916 A_B95916 sel_B95916 sel_b_B95916 Y_B95916
+Mnmos@2 Y_B95916 sel_B95916#2nmos@2_poly-left A_B95916 gnd NMOS L=0.4U W=2U AS=2.2P AD=2.2P PS=6.2U PD=6.2U
+Mpmos@2 Y_B95916 sel_b_B95916#2pin@49_polysilicon-1 A_B95916 vdd PMOS L=0.4U W=2U AS=2.2P AD=2.2P PS=6.2U PD=6.2U
+** Extracted Parasitic Capacitors ***
+C0 A_B95916 0 3.747fF
+C1 Y_B95916 0 3.842fF
+C2 sel_B95916 0 0.128fF
+C3 sel_b_B95916 0 0.129fF
+C4 net@46 0 1.738fF
+C5 net@50 0 1.58fF
+C6 sel_B95916#1pin@44_polysilicon-1 0 0.123fF
+C7 sel_b_B95916#1pin@48_polysilicon-1 0 0.133fF
+** Extracted Parasitic Resistors ***
+R0 sel_B95916 sel_B95916##0 9.92
+R1 sel_B95916##0 sel_B95916##1 9.92
+R2 sel_B95916##1 sel_B95916##2 9.92
+R3 sel_B95916##2 sel_B95916##3 9.92
+R4 sel_B95916##3 sel_B95916#1pin@44_polysilicon-1 9.92
+R5 sel_b_B95916 sel_b_B95916##0 9.521
+R6 sel_b_B95916##0 sel_b_B95916##1 9.521
+R7 sel_b_B95916##1 sel_b_B95916##2 9.521
+R8 sel_b_B95916##2 sel_b_B95916##3 9.521
+R9 sel_b_B95916##3 sel_b_B95916##4 9.521
+R10 sel_b_B95916##4 sel_b_B95916##5 9.521
+R11 sel_b_B95916##5 sel_b_B95916#1pin@48_polysilicon-1 9.521
+R12 sel_b_B95916#1pin@48_polysilicon-1 sel_b_B95916#2pin@49_polysilicon-1 6.2
+R13 sel_B95916#1pin@44_polysilicon-1 sel_B95916#2nmos@2_poly-left 4.65
+.ENDS IE0311-B95916-B63464-B94031-Proyecto-II2022__PASO-B95916
+
+*** SUBCIRCUIT IE0311-B95916-B63464-B94031-Proyecto-II2022__LATCH_B95916 FROM CELL LATCH_B95916{lay}
+.SUBCKT IE0311-B95916-B63464-B94031-Proyecto-II2022__LATCH_B95916 clk_B95916 clk_b_B95916 D_B95916 gnd Q_B94031 vdd
+XINV_20_1@0 Q_B94031#2pin@122_metal-2 gnd vdd net@237 IE0311-B95916-B63464-B94031-Proyecto-II2022__INV_20_10_B94031
+XINV_20_1@1 net@163 gnd vdd Q_B94031 IE0311-B95916-B63464-B94031-Proyecto-II2022__INV_20_10_B94031
+XINV_20_1@2 D_B95916 gnd vdd net@263 IE0311-B95916-B63464-B94031-Proyecto-II2022__INV_20_10_B94031
+XPASO-B95@0 net@237 clk_b_B95916 clk_B95916 net@163 IE0311-B95916-B63464-B94031-Proyecto-II2022__PASO-B95916
+XPASO-B95@1 net@263 clk_B95916 clk_b_B95916 net@163 IE0311-B95916-B63464-B94031-Proyecto-II2022__PASO-B95916
+** Extracted Parasitic Capacitors ***
+C0 Q_B94031#2pin@122_metal-2 0 15.367fF
+C1 net@237 0 4.287fF
+C2 net@163 0 18.14fF
+C3 Q_B94031 0 15.157fF
+C4 D_B95916 0 2.159fF
+C5 net@263 0 3.08fF
+C6 clk_b_B95916 0 7.247fF
+C7 clk_B95916 0 27.307fF
+** Extracted Parasitic Resistors ***
+R0 Q_B94031 Q_B94031#2pin@122_metal-2 6.162
+.ENDS IE0311-B95916-B63464-B94031-Proyecto-II2022__LATCH_B95916
+
 *** SUBCIRCUIT IE0311-B95916-B63464-B94031-Proyecto-II2022__flip_flop_B63464 FROM CELL flip_flop_B63464{lay}
 .SUBCKT IE0311-B95916-B63464-B94031-Proyecto-II2022__flip_flop_B63464 Clk_B63464 D_B63464 gnd Q_B63464 vdd
-Mnmos@0 net@0 Q_B63464#7pin@9_polysilicon-1 gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=3.905P PS=23U PD=11.45U
-Mnmos@1 Q_B63464 net@6#11pin@25_polysilicon-1 gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=5.61P PS=23U PD=16.7U
-Mnmos@2 net@4 net@119#5pin@41_polysilicon-1 gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=3.905P PS=23U PD=11.45U
-Mnmos@3 net@6 net@9#5nmos@3_poly-left net@0 gnd NMOS L=0.4U W=2U AS=3.905P AD=2.2P PS=11.45U PD=6.2U
-Mnmos@4 net@6 net@23#14nmos@4_poly-left net@4 gnd NMOS L=0.4U W=2U AS=3.905P AD=2.2P PS=11.45U PD=6.2U
-Mnmos@5 net@193 net@119#14pin@129_polysilicon-1 gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=3.905P PS=23U PD=11.45U
-Mnmos@6 net@119 net@199#11pin@145_polysilicon-1 gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=5.61P PS=23U PD=16.7U
-Mnmos@7 net@197 D_B63464#4pin@161_polysilicon-1 gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=3.905P PS=23U PD=11.45U
-Mnmos@8 net@199 Clk_B63464#5nmos@8_poly-left net@193 gnd NMOS L=0.4U W=2U AS=3.905P AD=2.2P PS=11.45U PD=6.2U
-Mnmos@9 net@199 net@216#14nmos@9_poly-left net@197 gnd NMOS L=0.4U W=2U AS=3.905P AD=2.2P PS=11.45U PD=6.2U
-Mnmos@10 net@216#18contact@89_metal-1-p-act Clk_B63464#16nmos@10_poly-right gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=5.61P PS=23U PD=16.7U
-Mnmos@11 net@9#16contact@96_metal-1-p-act Clk_B63464#23nmos@11_poly-right gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=5.61P PS=23U PD=16.7U
-Mnmos@12 net@23 net@216#26nmos@12_poly-right gnd gnd NMOS L=0.4U W=2U AS=8.78P AD=5.61P PS=23U PD=16.7U
-Mpmos@0 net@0 Q_B63464#5pmos@0_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=3.905P PS=30U PD=11.45U
-Mpmos@1 Q_B63464 net@6#9pmos@1_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=5.61P PS=30U PD=16.7U
-Mpmos@2 net@4 net@119#3pmos@2_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=3.905P PS=30U PD=11.45U
-Mpmos@3 net@6 net@23#10pin@59_polysilicon-1 net@0 vdd PMOS L=0.4U W=2U AS=3.905P AD=2.2P PS=11.45U PD=6.2U
-Mpmos@4 net@6 net@9#13pin@76_polysilicon-1 net@4 vdd PMOS L=0.4U W=2U AS=3.905P AD=2.2P PS=11.45U PD=6.2U
-Mpmos@5 net@193 net@119#12pmos@5_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=3.905P PS=30U PD=11.45U
-Mpmos@6 net@119 net@199#9pmos@6_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=5.61P PS=30U PD=16.7U
-Mpmos@7 net@197 D_B63464#2pmos@7_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=3.905P PS=30U PD=11.45U
-Mpmos@8 net@199 net@216#10pin@179_polysilicon-1 net@193 vdd PMOS L=0.4U W=2U AS=3.905P AD=2.2P PS=11.45U PD=6.2U
-Mpmos@9 net@199 Clk_B63464#13pin@196_polysilicon-1 net@197 vdd PMOS L=0.4U W=2U AS=3.905P AD=2.2P PS=11.45U PD=6.2U
-Mpmos@10 net@216#18contact@89_metal-1-p-act Clk_B63464#20pmos@10_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=5.61P PS=30U PD=16.7U
-Mpmos@11 net@9#16contact@96_metal-1-p-act Clk_B63464#28pmos@11_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=5.61P PS=30U PD=16.7U
-Mpmos@12 net@23 net@216#31pmos@12_poly-left vdd vdd PMOS L=0.4U W=4U AS=11.68P AD=5.61P PS=30U PD=16.7U
+XINV_20_1@0 Clk_B63464#3INV_20_1@0_A_B94031 gnd vdd net@48#2INV_20_1@0_Y_B94031 IE0311-B95916-B63464-B94031-Proyecto-II2022__INV_20_10_B94031
+XINV_20_1@1 net@64#4INV_20_1@1_A_B94031 gnd vdd net@54#2INV_20_1@1_Y_B94031 IE0311-B95916-B63464-B94031-Proyecto-II2022__INV_20_10_B94031
+XINV_20_1@2 Clk_B63464 gnd vdd net@64 IE0311-B95916-B63464-B94031-Proyecto-II2022__INV_20_10_B94031
+XLATCH_B9@0 net@54 net@48 net@3#1contact@0_metal-1-metal-2 gnd Q_B63464 vdd IE0311-B95916-B63464-B94031-Proyecto-II2022__LATCH_B95916
+XLATCH_B9@1 net@64#1pin@41_metal-1 Clk_B63464#0LATCH_B9@1_clk_b_B95916 D_B63464 gnd net@3#3LATCH_B9@1_Q_B94031 vdd IE0311-B95916-B63464-B94031-Proyecto-II2022__LATCH_B95916
 ** Extracted Parasitic Capacitors ***
-C0 net@0 0 10.255fF
-C1 Q_B63464#0contact@6_metal-1-metal-2 0 16.205fF
-C2 Q_B63464 0 19.357fF
-C3 net@6 0 22.536fF
-C4 net@4 0 10.404fF
-C5 net@119 0 38.665fF
-C6 net@9 0 12.049fF
-C7 net@23 0 44.231fF
-C8 net@193 0 10.255fF
-C9 net@119#7contact@49_metal-1-metal-2 0 16.205fF
-C10 net@199 0 22.536fF
-C11 net@197 0 10.981fF
-C12 D_B63464 0 1.214fF
-C13 Clk_B63464#0contact@83_metal-1-metal-2 0 46.896fF
-C14 net@216 0 46.763fF
-C15 net@216#18contact@89_metal-1-p-act 0 8.646fF
-C16 Clk_B63464 0 0.26fF
-C17 net@9#16contact@96_metal-1-p-act 0 10.049fF
-C18 net@216#28contact@110_metal-1-metal-2 0 9.387fF
-C19 Clk_B63464#37contact@122_metal-1-polysilicon-1 0 16.011fF
-C20 Q_B63464#7pin@9_polysilicon-1 0 0.105fF
-C21 net@6#11pin@25_polysilicon-1 0 0.105fF
-C22 net@119#5pin@41_polysilicon-1 0 0.105fF
-C23 net@119#14pin@129_polysilicon-1 0 0.105fF
-C24 net@199#11pin@145_polysilicon-1 0 0.105fF
-C25 D_B63464#4pin@161_polysilicon-1 0 0.105fF
-C26 Clk_B63464#16nmos@10_poly-right 0 0.108fF
-C27 Clk_B63464#23nmos@11_poly-right 0 0.105fF
-C28 net@216#26nmos@12_poly-right 0 0.105fF
-C29 Q_B63464#6pin@15_polysilicon-1 0 0.284fF
-C30 net@6#10pin@31_polysilicon-1 0 0.284fF
-C31 net@119#4pin@47_polysilicon-1 0 0.284fF
-C32 net@137 0 1.738fF
-C33 net@144 0 1.58fF
-C34 net@9#7pin@56_polysilicon-1 0 0.123fF
-C35 net@23#1pin@58_polysilicon-1 0 0.133fF
-C36 net@2 0 1.738fF
-C37 net@1 0 1.58fF
-C38 net@23#13pin@73_polysilicon-1 0 0.123fF
-C39 net@9#12pin@75_polysilicon-1 0 0.133fF
-C40 net@119#13pin@135_polysilicon-1 0 0.284fF
-C41 net@199#10pin@151_polysilicon-1 0 0.284fF
-C42 D_B63464#3pin@167_polysilicon-1 0 0.284fF
-C43 net@330 0 1.738fF
-C44 net@337 0 1.58fF
-C45 Clk_B63464#7pin@176_polysilicon-1 0 0.123fF
-C46 net@216#1pin@178_polysilicon-1 0 0.133fF
-C47 net@195 0 1.738fF
-C48 net@194 0 1.58fF
-C49 net@216#13pin@193_polysilicon-1 0 0.123fF
-C50 Clk_B63464#12pin@195_polysilicon-1 0 0.133fF
-C51 Clk_B63464#21pin@257_polysilicon-1 0 0.513fF
-C52 Clk_B63464#29pin@274_polysilicon-1 0 0.284fF
-C53 net@216#32pin@296_polysilicon-1 0 0.284fF
-C54 net@216#37pin@365_metal-2 0 11.171fF
+C0 Clk_B63464#3INV_20_1@0_A_B94031 0 11.539fF
+C1 net@48#2INV_20_1@0_Y_B94031 0 10.07fF
+C2 net@64#4INV_20_1@1_A_B94031 0 15.368fF
+C3 net@54#2INV_20_1@1_Y_B94031 0 10.796fF
+C4 Clk_B63464 0 22.413fF
+C5 net@64 0 13.05fF
+C6 net@3#1contact@0_metal-1-metal-2 0 12.142fF
+C7 Q_B63464 0 6.033fF
+C8 net@54 0 10.351fF
+C9 net@48 0 7.605fF
+C10 D_B63464 0 5.398fF
+C11 net@3#3LATCH_B9@1_Q_B94031 0 5.455fF
+C12 net@64#1pin@41_metal-1 0 43.214fF
+C13 Clk_B63464#0LATCH_B9@1_clk_b_B95916 0 9.913fF
+C14 net@3 0 20.586fF
+C15 net@48#1pin@31_metal-2 0 17.675fF
+C16 Clk_B63464#1pin@32_metal-2 0 34.039fF
+C17 net@54#1pin@35_metal-1 0 21.147fF
+C18 Clk_B63464#6pin@39_metal-2 0 24.353fF
 ** Extracted Parasitic Resistors ***
-R0 net@23 net@23##0 9.521
-R1 net@23##0 net@23##1 9.521
-R2 net@23##1 net@23##2 9.521
-R3 net@23##2 net@23##3 9.521
-R4 net@23##3 net@23##4 9.521
-R5 net@23##4 net@23##5 9.521
-R6 net@23##5 net@23#1pin@58_polysilicon-1 9.521
-R7 Q_B63464#5pmos@0_poly-left Q_B63464#5pmos@0_poly-left##0 7.233
-R8 Q_B63464#5pmos@0_poly-left##0 Q_B63464#5pmos@0_poly-left##1 7.233
-R9 Q_B63464#5pmos@0_poly-left##1 Q_B63464#6pin@15_polysilicon-1 7.233
-R10 Q_B63464#6pin@15_polysilicon-1 Q_B63464#6pin@15_polysilicon-1##0 8.99
-R11 Q_B63464#6pin@15_polysilicon-1##0 Q_B63464#6pin@15_polysilicon-1##1 8.99
-R12 Q_B63464#6pin@15_polysilicon-1##1 Q_B63464#6pin@15_polysilicon-1##2 8.99
-R13 Q_B63464#6pin@15_polysilicon-1##2 Q_B63464#6pin@15_polysilicon-1##3 8.99
-R14 Q_B63464#6pin@15_polysilicon-1##3 Q_B63464#7pin@9_polysilicon-1 8.99
-R15 Q_B63464#0contact@6_metal-1-metal-2 Q_B63464#6pin@15_polysilicon-1 6.2
-R16 Q_B63464 Q_B63464#0contact@6_metal-1-metal-2 6.338
-R17 net@6#9pmos@1_poly-left net@6#9pmos@1_poly-left##0 7.233
-R18 net@6#9pmos@1_poly-left##0 net@6#9pmos@1_poly-left##1 7.233
-R19 net@6#9pmos@1_poly-left##1 net@6#10pin@31_polysilicon-1 7.233
-R20 net@6#10pin@31_polysilicon-1 net@6#10pin@31_polysilicon-1##0 8.99
-R21 net@6#10pin@31_polysilicon-1##0 net@6#10pin@31_polysilicon-1##1 8.99
-R22 net@6#10pin@31_polysilicon-1##1 net@6#10pin@31_polysilicon-1##2 8.99
-R23 net@6#10pin@31_polysilicon-1##2 net@6#10pin@31_polysilicon-1##3 8.99
-R24 net@6#10pin@31_polysilicon-1##3 net@6#11pin@25_polysilicon-1 8.99
-R25 net@6 net@6#10pin@31_polysilicon-1 6.2
-R26 net@119#3pmos@2_poly-left net@119#3pmos@2_poly-left##0 7.233
-R27 net@119#3pmos@2_poly-left##0 net@119#3pmos@2_poly-left##1 7.233
-R28 net@119#3pmos@2_poly-left##1 net@119#4pin@47_polysilicon-1 7.233
-R29 net@119#4pin@47_polysilicon-1 net@119#4pin@47_polysilicon-1##0 8.99
-R30 net@119#4pin@47_polysilicon-1##0 net@119#4pin@47_polysilicon-1##1 8.99
-R31 net@119#4pin@47_polysilicon-1##1 net@119#4pin@47_polysilicon-1##2 8.99
-R32 net@119#4pin@47_polysilicon-1##2 net@119#4pin@47_polysilicon-1##3 8.99
-R33 net@119#4pin@47_polysilicon-1##3 net@119#5pin@41_polysilicon-1 8.99
-R34 net@119 net@119#4pin@47_polysilicon-1 6.2
-R35 net@9#7pin@56_polysilicon-1 net@9#5nmos@3_poly-left 4.65
-R36 net@9 net@9##0 9.92
-R37 net@9##0 net@9##1 9.92
-R38 net@9##1 net@9##2 9.92
-R39 net@9##2 net@9##3 9.92
-R40 net@9##3 net@9#7pin@56_polysilicon-1 9.92
-R41 net@23#1pin@58_polysilicon-1 net@23#10pin@59_polysilicon-1 6.2
-R42 net@23 net@23##0 9.92
-R43 net@23##0 net@23##1 9.92
-R44 net@23##1 net@23##2 9.92
-R45 net@23##2 net@23##3 9.92
-R46 net@23##3 net@23#13pin@73_polysilicon-1 9.92
-R47 net@9 net@9##0 9.521
-R48 net@9##0 net@9##1 9.521
-R49 net@9##1 net@9##2 9.521
-R50 net@9##2 net@9##3 9.521
-R51 net@9##3 net@9##4 9.521
-R52 net@9##4 net@9##5 9.521
-R53 net@9##5 net@9#12pin@75_polysilicon-1 9.521
-R54 net@9#12pin@75_polysilicon-1 net@9#13pin@76_polysilicon-1 6.2
-R55 net@23#13pin@73_polysilicon-1 net@23#14nmos@4_poly-left 4.65
-R56 net@216 net@216##0 9.521
-R57 net@216##0 net@216##1 9.521
-R58 net@216##1 net@216##2 9.521
-R59 net@216##2 net@216##3 9.521
-R60 net@216##3 net@216##4 9.521
-R61 net@216##4 net@216##5 9.521
-R62 net@216##5 net@216#1pin@178_polysilicon-1 9.521
-R63 net@119#12pmos@5_poly-left net@119#12pmos@5_poly-left##0 7.233
-R64 net@119#12pmos@5_poly-left##0 net@119#12pmos@5_poly-left##1 7.233
-R65 net@119#12pmos@5_poly-left##1 net@119#13pin@135_polysilicon-1 7.233
-R66 net@119#13pin@135_polysilicon-1 net@119#13pin@135_polysilicon-1##0 8.99
-R67 net@119#13pin@135_polysilicon-1##0 net@119#13pin@135_polysilicon-1##1 8.99
-R68 net@119#13pin@135_polysilicon-1##1 net@119#13pin@135_polysilicon-1##2 8.99
-R69 net@119#13pin@135_polysilicon-1##2 net@119#13pin@135_polysilicon-1##3 8.99
-R70 net@119#13pin@135_polysilicon-1##3 net@119#14pin@129_polysilicon-1 8.99
-R71 net@119#7contact@49_metal-1-metal-2 net@119#13pin@135_polysilicon-1 6.2
-R72 net@119 net@119#7contact@49_metal-1-metal-2 6.338
-R73 net@199#9pmos@6_poly-left net@199#9pmos@6_poly-left##0 7.233
-R74 net@199#9pmos@6_poly-left##0 net@199#9pmos@6_poly-left##1 7.233
-R75 net@199#9pmos@6_poly-left##1 net@199#10pin@151_polysilicon-1 7.233
-R76 net@199#10pin@151_polysilicon-1 net@199#10pin@151_polysilicon-1##0 8.99
-R77 net@199#10pin@151_polysilicon-1##0 net@199#10pin@151_polysilicon-1##1 8.99
-R78 net@199#10pin@151_polysilicon-1##1 net@199#10pin@151_polysilicon-1##2 8.99
-R79 net@199#10pin@151_polysilicon-1##2 net@199#10pin@151_polysilicon-1##3 8.99
-R80 net@199#10pin@151_polysilicon-1##3 net@199#11pin@145_polysilicon-1 8.99
-R81 net@199 net@199#10pin@151_polysilicon-1 6.2
-R82 D_B63464#2pmos@7_poly-left D_B63464#2pmos@7_poly-left##0 7.233
-R83 D_B63464#2pmos@7_poly-left##0 D_B63464#2pmos@7_poly-left##1 7.233
-R84 D_B63464#2pmos@7_poly-left##1 D_B63464#3pin@167_polysilicon-1 7.233
-R85 D_B63464#3pin@167_polysilicon-1 D_B63464#3pin@167_polysilicon-1##0 8.99
-R86 D_B63464#3pin@167_polysilicon-1##0 D_B63464#3pin@167_polysilicon-1##1 8.99
-R87 D_B63464#3pin@167_polysilicon-1##1 D_B63464#3pin@167_polysilicon-1##2 8.99
-R88 D_B63464#3pin@167_polysilicon-1##2 D_B63464#3pin@167_polysilicon-1##3 8.99
-R89 D_B63464#3pin@167_polysilicon-1##3 D_B63464#4pin@161_polysilicon-1 8.99
-R90 D_B63464 D_B63464#3pin@167_polysilicon-1 6.2
-R91 Clk_B63464#7pin@176_polysilicon-1 Clk_B63464#5nmos@8_poly-left 4.65
-R92 Clk_B63464#0contact@83_metal-1-metal-2 Clk_B63464#0contact@83_metal-1-metal-2##0 9.92
-R93 Clk_B63464#0contact@83_metal-1-metal-2##0 Clk_B63464#0contact@83_metal-1-metal-2##1 9.92
-R94 Clk_B63464#0contact@83_metal-1-metal-2##1 Clk_B63464#0contact@83_metal-1-metal-2##2 9.92
-R95 Clk_B63464#0contact@83_metal-1-metal-2##2 Clk_B63464#0contact@83_metal-1-metal-2##3 9.92
-R96 Clk_B63464#0contact@83_metal-1-metal-2##3 Clk_B63464#7pin@176_polysilicon-1 9.92
-R97 net@216#1pin@178_polysilicon-1 net@216#10pin@179_polysilicon-1 6.2
-R98 net@216 net@216##0 9.92
-R99 net@216##0 net@216##1 9.92
-R100 net@216##1 net@216##2 9.92
-R101 net@216##2 net@216##3 9.92
-R102 net@216##3 net@216#13pin@193_polysilicon-1 9.92
-R103 Clk_B63464#0contact@83_metal-1-metal-2 Clk_B63464#0contact@83_metal-1-metal-2##0 9.521
-R104 Clk_B63464#0contact@83_metal-1-metal-2##0 Clk_B63464#0contact@83_metal-1-metal-2##1 9.521
-R105 Clk_B63464#0contact@83_metal-1-metal-2##1 Clk_B63464#0contact@83_metal-1-metal-2##2 9.521
-R106 Clk_B63464#0contact@83_metal-1-metal-2##2 Clk_B63464#0contact@83_metal-1-metal-2##3 9.521
-R107 Clk_B63464#0contact@83_metal-1-metal-2##3 Clk_B63464#0contact@83_metal-1-metal-2##4 9.521
-R108 Clk_B63464#0contact@83_metal-1-metal-2##4 Clk_B63464#0contact@83_metal-1-metal-2##5 9.521
-R109 Clk_B63464#0contact@83_metal-1-metal-2##5 Clk_B63464#12pin@195_polysilicon-1 9.521
-R110 Clk_B63464#12pin@195_polysilicon-1 Clk_B63464#13pin@196_polysilicon-1 6.2
-R111 net@216#13pin@193_polysilicon-1 net@216#14nmos@9_poly-left 4.65
-R112 Clk_B63464#20pmos@10_poly-left Clk_B63464#20pmos@10_poly-left##0 9.3
-R113 Clk_B63464#20pmos@10_poly-left##0 Clk_B63464#20pmos@10_poly-left##1 9.3
-R114 Clk_B63464#20pmos@10_poly-left##1 Clk_B63464#21pin@257_polysilicon-1 9.3
-R115 Clk_B63464#21pin@257_polysilicon-1 Clk_B63464#21pin@257_polysilicon-1##0 9.688
-R116 Clk_B63464#21pin@257_polysilicon-1##0 Clk_B63464#21pin@257_polysilicon-1##1 9.688
-R117 Clk_B63464#21pin@257_polysilicon-1##1 Clk_B63464#21pin@257_polysilicon-1##2 9.688
-R118 Clk_B63464#21pin@257_polysilicon-1##2 Clk_B63464#16nmos@10_poly-right 9.688
-R119 Clk_B63464#28pmos@11_poly-left Clk_B63464#28pmos@11_poly-left##0 7.233
-R120 Clk_B63464#28pmos@11_poly-left##0 Clk_B63464#28pmos@11_poly-left##1 7.233
-R121 Clk_B63464#28pmos@11_poly-left##1 Clk_B63464#29pin@274_polysilicon-1 7.233
-R122 Clk_B63464#29pin@274_polysilicon-1 Clk_B63464#29pin@274_polysilicon-1##0 8.99
-R123 Clk_B63464#29pin@274_polysilicon-1##0 Clk_B63464#29pin@274_polysilicon-1##1 8.99
-R124 Clk_B63464#29pin@274_polysilicon-1##1 Clk_B63464#29pin@274_polysilicon-1##2 8.99
-R125 Clk_B63464#29pin@274_polysilicon-1##2 Clk_B63464#29pin@274_polysilicon-1##3 8.99
-R126 Clk_B63464#29pin@274_polysilicon-1##3 Clk_B63464#23nmos@11_poly-right 8.99
-R127 Clk_B63464#0contact@83_metal-1-metal-2 Clk_B63464#29pin@274_polysilicon-1 6.2
-R128 net@9#16contact@96_metal-1-p-act net@9 5.324
-R129 net@216#31pmos@12_poly-left net@216#31pmos@12_poly-left##0 7.233
-R130 net@216#31pmos@12_poly-left##0 net@216#31pmos@12_poly-left##1 7.233
-R131 net@216#31pmos@12_poly-left##1 net@216#32pin@296_polysilicon-1 7.233
-R132 net@216#32pin@296_polysilicon-1 net@216#32pin@296_polysilicon-1##0 8.99
-R133 net@216#32pin@296_polysilicon-1##0 net@216#32pin@296_polysilicon-1##1 8.99
-R134 net@216#32pin@296_polysilicon-1##1 net@216#32pin@296_polysilicon-1##2 8.99
-R135 net@216#32pin@296_polysilicon-1##2 net@216#32pin@296_polysilicon-1##3 8.99
-R136 net@216#32pin@296_polysilicon-1##3 net@216#26nmos@12_poly-right 8.99
-R137 net@216#28contact@110_metal-1-metal-2 net@216#32pin@296_polysilicon-1 6.2
-R138 Clk_B63464 Clk_B63464##0 6.82
-C55 Clk_B63464##0 0 0.197fF
-R139 Clk_B63464##0 Clk_B63464#37contact@122_metal-1-polysilicon-1 6.82
-R140 Clk_B63464#37contact@122_metal-1-polysilicon-1 Clk_B63464#37contact@122_metal-1-polysilicon-1##0 9.034
-C56 Clk_B63464#37contact@122_metal-1-polysilicon-1##0 0 0.342fF
-R141 Clk_B63464#37contact@122_metal-1-polysilicon-1##0 Clk_B63464#37contact@122_metal-1-polysilicon-1##1 9.034
-C57 Clk_B63464#37contact@122_metal-1-polysilicon-1##1 0 0.342fF
-R142 Clk_B63464#37contact@122_metal-1-polysilicon-1##1 Clk_B63464#37contact@122_metal-1-polysilicon-1##2 9.034
-C58 Clk_B63464#37contact@122_metal-1-polysilicon-1##2 0 0.342fF
-R143 Clk_B63464#37contact@122_metal-1-polysilicon-1##2 Clk_B63464#37contact@122_metal-1-polysilicon-1##3 9.034
-C59 Clk_B63464#37contact@122_metal-1-polysilicon-1##3 0 0.342fF
-R144 Clk_B63464#37contact@122_metal-1-polysilicon-1##3 Clk_B63464#37contact@122_metal-1-polysilicon-1##4 9.034
-C60 Clk_B63464#37contact@122_metal-1-polysilicon-1##4 0 0.342fF
-R145 Clk_B63464#37contact@122_metal-1-polysilicon-1##4 Clk_B63464#37contact@122_metal-1-polysilicon-1##5 9.034
-C61 Clk_B63464#37contact@122_metal-1-polysilicon-1##5 0 0.342fF
-R146 Clk_B63464#37contact@122_metal-1-polysilicon-1##5 Clk_B63464#21pin@257_polysilicon-1 9.034
-R147 net@216#28contact@110_metal-1-metal-2 net@216 6.786
-R148 net@216#18contact@89_metal-1-p-act net@216#37pin@365_metal-2 4.28
-R149 net@216 net@216#37pin@365_metal-2 4.027
-R150 Clk_B63464#0contact@83_metal-1-metal-2 Clk_B63464#37contact@122_metal-1-polysilicon-1 4.739
+R0 net@3 net@3#1contact@0_metal-1-metal-2 9.029
+R1 net@3#3LATCH_B9@1_Q_B94031 net@3 4.056
+R2 net@48 net@48#1pin@31_metal-2 5.655
+R3 net@48#2INV_20_1@0_Y_B94031 net@48#1pin@31_metal-2 7.488
+R4 Clk_B63464#0LATCH_B9@1_clk_b_B95916 Clk_B63464#1pin@32_metal-2 7.371
+R5 Clk_B63464#3INV_20_1@0_A_B94031 Clk_B63464#1pin@32_metal-2 8.58
+R6 net@54 net@54#1pin@35_metal-1 6.357
+R7 net@54#2INV_20_1@1_Y_B94031 net@54#1pin@35_metal-1 6.63
+R8 Clk_B63464 Clk_B63464##0 6.503
+C19 Clk_B63464##0 0 11.661fF
+R9 Clk_B63464##0 Clk_B63464#6pin@39_metal-2 6.503
+R10 Clk_B63464#1pin@32_metal-2 Clk_B63464#6pin@39_metal-2 9.165
+R11 net@64 net@64#1pin@41_metal-1 8.015
+R12 net@64#4INV_20_1@1_A_B94031 net@64#1pin@41_metal-1 9.438
 .ENDS IE0311-B95916-B63464-B94031-Proyecto-II2022__flip_flop_B63464
 
 *** TOP LEVEL CELL: flip_flop_SIM_B63464{lay}
 Xflip_flo@0 Clk D GND Q VDD IE0311-B95916-B63464-B94031-Proyecto-II2022__flip_flop_B63464
 ** Extracted Parasitic Capacitors ***
-C0 Clk 0 4.563fF
-C1 D 0 7.631fF
-C2 Q 0 4.72fF
-C3 GND 0 15.741fF
-C4 VDD 0 7.456fF
-C5 D#1pin@4_metal-2 0 7.631fF
+C0 Clk 0 7.238fF
+C1 D 0 14.066fF
+C2 Q 0 10.07fF
+C3 GND 0 6.462fF
+C4 VDD 0 4.888fF
+C5 D#1pin@15_metal-1 0 14.066fF
 ** Extracted Parasitic Resistors ***
-R0 D D#1pin@4_metal-2 5.675
+R0 D D#1pin@15_metal-1 8.638
 
 * Spice Code nodes in cell cell 'flip_flop_SIM_B63464{lay}'
 .include C:\Users\Ricardo Hidalgo\OneDrive\Desktop\semiconductores\lab3\Electric\Proyecto\spice.txt
-V_D D 0 PULSE(5 0 0 0.1n 0.1n 20n 40n) ; Señal de entrada D (Pulso 0-5V, con transición a los 10ns)
-* Definir la señal de reloj Clk
-V_Clk Clk 0 PULSE(0 5 0 0.1n 0.1n 20n 40n) ; Señal de reloj (0-5V, con período de 40ns)
-* Análisis transitorio
-.tran 1n 100n ; Simulación de 100ns con un paso de 1ns
-* Fin de la simulación
-.end
+VVDD VDD 0 DC 5;
+VGND GND 0 DC 0;
+Vin D 0 PULSE(8 0 5.1n 0.1n 0.1n 50.1n 100.1n);
+V_clk Clk 0 PULSE(0 10 5n 0.1n 0.1n 50n 100n);
+.tran 0 500n
 .END
